@@ -1,0 +1,2 @@
+importante saber que quando fora criar a pub no linkedin colocar esse entendimento que array é só para buscar a base e atualmente usam se collections para manipular volumes de dados.
+

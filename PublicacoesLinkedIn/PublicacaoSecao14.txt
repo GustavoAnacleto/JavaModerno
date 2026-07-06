@@ -1,0 +1,18 @@
+Finalizei a Seção 14 do curso Java Moderno, com foco nos fundamentos de Orientação a Objetos em Java.
+
+Foi uma semana de estudo mais detalhado, revisitando conceitos que eu já tinha visto no passado, mas agora com outro olhar. O ponto que mais aproveitei foi o entendimento sobre static: métodos estáticos, membros estáticos e a diferença entre aquilo que pertence ao objeto e aquilo que pertence à classe.
+
+Também percebi uma evolução importante na organização dos estudos. Trabalhar em Java puro, organizando pastas, pacotes e arquivos manualmente no Sublime Text, tem me ajudado a entender melhor o que acontece por trás da estrutura de um projeto, sem depender tanto de uma IDE fazendo tudo automaticamente.
+
+A didática do professor Arnaldo tem sido exatamente o que eu estava procurando neste momento: calma, detalhada e bem apegada aos fundamentos. Para quem quer construir uma base forte antes de avançar para mercado, frameworks e projetos maiores, isso faz bastante diferença.
+
+Nesta seção, pratiquei classes, objetos, atributos, construtores, sobrecarga de construtores e métodos, pacotes, modificadores de acesso, encapsulamento, métodos estáticos, membros estáticos e passagem de valores/objetos.
+
+Termino essa etapa com sensação de trabalho bem feito — e também com a consciência de que ainda tenho muito a evoluir. Mas é justamente esse o processo: estudar com constância, consolidar a base e não pular etapas.
+
+Repositório do curso:
+https://github.com/GustavoAnacleto/JavaModerno.git
+
+Se quiser trocar uma ideia sobre Java, tecnologia ou até me chamar para uma oportunidade, é só chamar. ☕
+
+#Java #OrientacaoAObjetos #DesenvolvimentoDeSoftware #Programacao #Estudos #CarreiraTech
