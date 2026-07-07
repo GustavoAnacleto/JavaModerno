@@ -1,20 +1,344 @@
 Seção 16 - Herança em Java
 
-Herança permite criar uma classe filha a partir de uma classe mãe.
+Objetivo da seção
 
-A palavra-chave usada em Java é extends.
+Estudar herança em Java de forma prática, entendendo como uma classe filha pode reaproveitar atributos e métodos de uma classe mãe.
 
-A relação correta deve ser "é um":
-Aluno é uma Pessoa.
-Gerente é um Funcionario.
+Nesta seção, pratiquei:
+
+- extends
+- superclasse e subclasse
+- princípio do "é um"
+- sobrescrita de métodos
+- uso de super
+- uso de super em construtores
+- encapsulamento com herança
+- organização dos exercícios em arquivos separados
+
+
+Conceito principal
+
+Herança permite criar uma nova classe a partir de uma classe já existente.
+
+A classe existente pode ser chamada de:
+
+- superclasse
+- classe base
+- classe pai
+
+A nova classe pode ser chamada de:
+
+- subclasse
+- classe derivada
+- classe filha
+
+Em Java, usamos a palavra-chave extends.
+
+Exemplo:
+
+public class Carro extends Veiculo {
+}
+
+Leitura correta:
+
 Carro é um Veiculo.
+Carro herda de Veiculo.
 
-Herança não serve apenas para evitar repetição de código.
+
+Princípio do "é um"
+
+Antes de usar herança, a pergunta principal deve ser:
+
+A classe filha é um tipo da classe mãe?
+
+Exemplos corretos:
+
+Carro é um Veiculo.
+Assistente é um Funcionario.
+Estudante é uma Pessoa.
+Cachorro é um Animal.
+
+Exemplos que exigem cuidado:
+
+Venda é um Produto? Não.
+Endereco é uma Pessoa? Não.
+Estoque é um Produto? Não.
+
+Aprendizado:
+
+Herança não deve ser usada apenas para reaproveitar código.
 Ela deve representar uma relação real de especialização.
 
-Mesmo com herança, atributos private da classe mãe continuam protegidos.
-A subclasse deve acessar esses dados por métodos, como getters ou métodos públicos/protegidos.
 
-Primeiro ponto importante:
-Herança reaproveita comportamento, mas precisa respeitar encapsulamento.
+Herança e encapsulamento
 
+Mesmo com herança, atributos private continuam protegidos.
+
+A subclasse não acessa diretamente os atributos privados da superclasse.
+
+O acesso deve acontecer por:
+
+- construtores
+- getters
+- setters
+- métodos públicos ou protegidos, quando fizer sentido
+
+Aprendizado importante:
+
+Herança reaproveita comportamento, mas não quebra encapsulamento.
+
+
+Sobrescrita de métodos
+
+Sobrescrita acontece quando a subclasse redefine um método que já existe na superclasse.
+
+Para ser sobrescrita, o método precisa manter:
+
+- mesmo nome
+- mesmo tipo de retorno
+- mesma lista de parâmetros
+- mesma ordem dos parâmetros
+
+Boa prática:
+
+Usar @Override ao sobrescrever métodos.
+
+A anotação @Override ajuda o compilador a verificar se realmente existe sobrescrita.
+
+
+Sobrescrita x Sobrecarga
+
+Sobrescrita:
+
+Acontece entre superclasse e subclasse.
+
+Exemplo conceitual:
+
+Veiculo tem acelerar().
+Carro sobrescreve acelerar().
+
+Sobrecarga:
+
+Acontece quando métodos têm o mesmo nome, mas parâmetros diferentes.
+
+Exemplo conceitual:
+
+calcular()
+calcular(int valor)
+calcular(int valor, double taxa)
+
+
+Palavra-chave super
+
+A palavra-chave super representa a superclasse imediata.
+
+Ela pode ser usada para:
+
+- chamar métodos da superclasse
+- chamar construtores da superclasse
+- acessar membros da superclasse, quando permitido
+
+Exemplo:
+
+super.acelerar();
+
+Esse comando chama o método acelerar() da superclasse.
+
+
+super em construtores
+
+Quando a classe filha precisa chamar o construtor da classe mãe, usamos:
+
+super(parametros);
+
+Regra importante:
+
+A chamada super(...) deve ser a primeira instrução do construtor da subclasse.
+
+Exemplo conceitual:
+
+Pessoa inicializa nome e idade.
+Estudante inicializa matrícula.
+
+
+Exercícios realizados
+
+Exercício 01 - Super com Veiculo e Carro
+
+Objetivo:
+
+Praticar super para chamar o método da superclasse dentro de um método sobrescrito.
+
+Estrutura:
+
+Veiculo
+ └── Carro
+
+O que foi praticado:
+
+- Carro extends Veiculo
+- sobrescrita de acelerar()
+- uso de super.acelerar()
+- método herdado sem sobrescrita: frear()
+- método exclusivo da subclasse: ligarArCondicionado()
+
+Aprendizado:
+
+O método acelerar() foi sobrescrito em Carro, mas ainda é possível chamar o comportamento original de Veiculo usando super.acelerar().
+
+
+Exercício 02 - Funcionario e Assistente
+
+Objetivo:
+
+Praticar herança, encapsulamento, getters, setters, aumento salarial e sobrescrita de método.
+
+Estrutura:
+
+Funcionario
+ └── Assistente
+
+O que foi praticado:
+
+- atributos private
+- métodos getters e setters
+- método addAumento(double valor)
+- método ganhoAnual()
+- Assistente extends Funcionario
+- sobrescrita de ganhoAnual()
+- uso de super.ganhoAnual()
+- bônus fixo de R$ 1000 para assistente
+
+Aprendizado:
+
+Assistente é um tipo de Funcionario, por isso a herança faz sentido.
+
+A classe Assistente reaproveita o cálculo anual da classe Funcionario e adiciona uma regra específica.
+
+
+Exercício 03 - Pessoa e Estudante
+
+Objetivo:
+
+Praticar herança com construtores, pacotes, super e modificadores de acesso.
+
+Estrutura:
+
+Pessoa
+ └── Estudante
+
+O que foi praticado:
+
+- classe Pessoa no pacote entidades
+- classe Estudante herdando de Pessoa
+- atributos private
+- construtor em Pessoa
+- construtor em Estudante
+- uso de super(nome, idade)
+- classe Aplicacao importando Pessoa e Estudante
+
+Erro importante corrigido:
+
+O erro encontrado não era por causa dos atributos private.
+
+O problema era que o construtor de Estudante não estava public.
+
+Aprendizado:
+
+Atributos private continuam corretos.
+Construtores que serão chamados fora do pacote precisam estar public.
+
+
+Erros e aprendizados importantes
+
+1. Cumprir primeiro o enunciado
+
+Na primeira tentativa do exercício de Funcionario, foram criados atributos diferentes do pedido, como:
+
+- codFuncional
+- valorDiaTrabalhado
+- qtdDiaTrabalhado
+
+Esses atributos poderiam fazer sentido em outro exercício, mas não atendiam ao enunciado.
+
+Aprendizado:
+
+Primeiro cumprir o contrato do exercício.
+Depois pensar em melhorias.
+
+
+2. Uso de this em setters
+
+Quando o parâmetro tem o mesmo nome do atributo, usar this está correto.
+
+Exemplo:
+
+public void setNome(String nome) {
+    this.nome = nome;
+}
+
+Leitura:
+
+this.nome -> atributo da classe
+nome      -> parâmetro recebido pelo método
+
+
+3. Modificador de acesso em construtores
+
+Quando uma classe está em outro pacote, o construtor precisa ser acessível.
+
+Exemplo:
+
+public Estudante(String nome, int idade, int matricula) {
+    super(nome, idade);
+    this.matricula = matricula;
+}
+
+Aprendizado:
+
+private protege atributos.
+public permite acesso externo ao construtor.
+
+
+Boas práticas reforçadas
+
+- usar nomes claros para classes e métodos
+- manter atributos como private
+- usar getters e setters quando necessário
+- usar @Override ao sobrescrever métodos
+- usar super quando precisar reaproveitar comportamento da classe mãe
+- separar classes em arquivos diferentes
+- usar Aplicacao.java para o método main
+- organizar cada exercício em uma pasta própria
+- compilar com atenção para não usar o arquivo errado
+
+
+Estrutura sugerida da seção
+
+Section16Heranca/
+├── Documentos/
+│   ├── resumo-aula001-introducao-heranca.md
+│   ├── resumo-aula002-heranca-com-extends.md
+│   ├── resumo-aula003-sobrescrita-metodos.md
+│   ├── resumo-aula004-palavra-chave-super.md
+│   └── resumo-aula005-super-em-construtores.md
+├── Exercicios/
+│   ├── exercicio01SuperVeiculo/
+│   ├── exercicio02AplicandoHeranca/
+│   └── exercicio03PessoaEstudante/
+├── Fontes/
+├── SolucoesExercicios/
+└── anotacoes.txt
+
+
+Resumo final da seção
+
+Nesta seção, consolidei os fundamentos de herança em Java.
+
+Aprendi que herança deve respeitar o princípio do "é um" e que a palavra-chave extends permite criar uma subclasse a partir de uma superclasse.
+
+Pratiquei sobrescrita de métodos com @Override, uso da palavra-chave super para chamar métodos da classe mãe e uso de super em construtores.
+
+Também entendi que herança não elimina o encapsulamento. Atributos private continuam protegidos, e o acesso deve acontecer por métodos ou construtores adequados.
+
+A seção reforçou a importância de organizar os exercícios em pastas próprias, separar classes em arquivos diferentes e usar commits claros no GitHub.
