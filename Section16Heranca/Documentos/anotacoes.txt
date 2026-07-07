@@ -1,0 +1,19 @@
+Seção 16 - Herança em Java
+
+Herança permite criar uma classe filha a partir de uma classe mãe.
+
+A palavra-chave usada em Java é extends.
+
+A relação correta deve ser "é um":
+Aluno é uma Pessoa.
+Gerente é um Funcionario.
+Carro é um Veiculo.
+
+Herança não serve apenas para evitar repetição de código.
+Ela deve representar uma relação real de especialização.
+
+Mesmo com herança, atributos private da classe mãe continuam protegidos.
+A subclasse deve acessar esses dados por métodos, como getters ou métodos públicos/protegidos.
+
+Primeiro ponto importante:
+Herança reaproveita comportamento, mas precisa respeitar encapsulamento.
