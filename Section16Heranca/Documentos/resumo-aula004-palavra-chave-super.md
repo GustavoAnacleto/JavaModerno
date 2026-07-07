@@ -436,14 +436,4 @@ Isso mostra que a herança permite reaproveitamento, mas também oferece control
 
 ---
 
-## 🚀 Sugestão de commit
 
-```bash
-git commit -m "docs: adiciona resumo sobre palavra-chave super"
-```
-
-Se também criar o código da aula em `Fontes`, uma opção é:
-
-```bash
-git commit -m "feat: adiciona exemplo de uso da palavra-chave super"
-```
