@@ -374,14 +374,4 @@ A herança permite reaproveitar código, mas precisa respeitar a lógica do dom�
 
 ---
 
-## 🚀 Sugestão de commit
 
-```bash
-git commit -m "docs: adiciona resumo sobre heranca com extends"
-```
-
-Se também criar o código da aula em `Fontes`, uma opção é:
-
-```bash
-git commit -m "feat: adiciona exemplo de heranca com animal e cachorro"
-```

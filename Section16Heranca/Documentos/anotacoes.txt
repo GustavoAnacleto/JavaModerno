@@ -17,3 +17,4 @@ A subclasse deve acessar esses dados por métodos, como getters ou métodos púb
 
 Primeiro ponto importante:
 Herança reaproveita comportamento, mas precisa respeitar encapsulamento.
+
