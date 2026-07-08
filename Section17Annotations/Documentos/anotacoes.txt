@@ -1,0 +1,18 @@
+Seção 17 - Annotations
+
+Aula 001 - Introdução
+
+Annotations são anotações/metadados adicionados ao código Java.
+
+Diferença importante:
+- comentário: explicação para humanos, ignorada pelo compilador;
+- annotation: informação que pode ser lida pelo compilador, ferramentas ou frameworks.
+
+Exemplo conhecido:
+@Override
+
+Aprendizado:
+@Override ajuda o compilador a verificar se um método realmente sobrescreve outro método da superclasse.
+
+Observação:
+Spring Boot usa muitas annotations, mas agora o foco é entender o conceito básico em Java puro.
