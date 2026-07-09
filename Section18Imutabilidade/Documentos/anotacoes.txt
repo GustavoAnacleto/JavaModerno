@@ -1,0 +1,102 @@
+seção 18 - imutabilidade
+
+aula 01
+
+Imutabilidade, aparentemente, é o assunto que trata de colocar alguma coisa que deixa uma variável, método ou classe sem poder ser alterado depois.
+
+A ideia principal da seção é aprender como deixar algumas coisas fixas no Java.
+
+final = palavra reservada usada para aplicar essa ideia de algo fixo ou que não pode ser alterado.
+
+Pergunta que surgiu:
+
+private final int numero = 10;
+
+Isso está correto ou precisa ser sem o modificador de acesso?
+
+Pelo que testei, usar final junto com modificador de acesso é permitido. O problema não é o final.
+
+O que aconteceu é que, quando usei public, consegui acessar normalmente de fora da classe. Quando usei private, o compilador acusou erro ao tentar acessar diretamente.
+
+Depois retirei o final da variável e mantive private. O erro continuou. Então entendi que o problema era o modificador de acesso private, e não o final.
+
+Conclusão:
+
+private não impede que eu consulte um valor se existir um getter. Ele impede o acesso direto ao atributo fora da classe.
+
+final impede que o valor seja alterado depois que já foi definido.
+
+Então:
+
+private controla o acesso.
+final controla a possibilidade de mudar o valor.
+
+Nomes de constantes em Java são escritos com letras maiúsculas. Quando tiver mais de uma palavra, usa underline.
+
+Exemplo:
+
+CODIGO_FIXO
+TAXA_DE_JUROS
+
+aula 02
+
+Na aula 02, vimos que um método da subclasse não consegue sobrescrever um método da classe pai quando esse método foi criado com final.
+
+O compilador acusa erro dizendo que não é possível sobrescrever um método final.
+
+Detalhe importante: mesmo usando a annotation @Override, não é possível sobrescrever um método criado com final.
+
+Na verdade, o @Override só deixa mais claro para o compilador que eu estou tentando sobrescrever o método. Mas, como o método da classe pai é final, o compilador bloqueia.
+
+Conclusão:
+
+final em método impede sobrescrita.
+
+aula 03
+
+Essa aula falou brevemente sobre enum.
+
+O professor explicou que mais para frente do curso vai falar melhor sobre enum, principalmente quando chegar em JavaFX.
+
+Por enquanto, basta entender que enum e variáveis final são formas de trabalhar com valores constantes em Java.
+
+Enum serve para representar um conjunto fixo de valores.
+
+Exemplo de ideia:
+
+dias da semana
+status de pedido
+tipos fixos de alguma coisa
+
+Também foi visto que final em classe impede herança.
+
+Ou seja, se uma classe é final, outra classe não pode dar extends nela.
+
+Conclusão:
+
+final em variável impede mudar o valor.
+final em método impede sobrescrever.
+final em classe impede herdar.
+enum representa um conjunto fixo de constantes.
+
+terminado as aulas, vamos aos exercícios
+
+exercício 01
+
+Consegui compilar e resolver bem, apesar de que só compilei porque tirei o final das variáveis.
+
+Preciso revisar melhor esse ponto, porque se a variável for final, ela não pode receber outro valor depois da primeira atribuição.
+
+exercício 02
+
+Como esperado, acusou erro de compilação ao tentar sobrescrever um método final.
+
+Isso confirmou o que foi visto na aula: método final não pode ser sobrescrito.
+
+exercício 03
+
+Como esperado, também não compilou.
+
+O erro confirma que uma classe final não pode ser herdada.
+
+Agora vou organizar os resumos da seção.
