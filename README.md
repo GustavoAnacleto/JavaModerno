@@ -146,7 +146,18 @@ Principal aprendizado da seção: annotations não são comentários decorativos
 Principal aprendizado da seção: `final` pode ser usado em diferentes contextos. Em variáveis, impede nova atribuição; em métodos, impede sobrescrita; em classes, impede herança. Também ficou claro que `private` controla acesso, enquanto `final` controla alteração.
 
 ---
+### Seção 18 – Imutabilidade
 
+- Conceito inicial de imutabilidade em Java.
+- Uso da palavra-chave `final`.
+- Aplicação de `final` em variáveis, métodos e classes.
+- Criação de constantes e convenção de nomes em letras maiúsculas.
+- Diferença entre `private` e `final`.
+- Relação entre `final`, `@Override`, herança e sobrescrita.
+- Introdução ao uso de `enum` como conjunto fixo de constantes.
+
+Principal aprendizado da seção: `final` pode ser usado em diferentes contextos. Em variáveis, impede nova atribuição; em métodos, impede sobrescrita; em classes, impede herança. Também ficou claro que `private` controla acesso, enquanto `final` controla alteração.
+---
 
 
 ## 🗂️ Organização das Seções
