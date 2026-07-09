@@ -29,21 +29,26 @@ Nesta seção, resumo os principais tópicos estudados em cada parte do curso.
 
 - Estrutura básica de um programa Java.
 - Uso de `class`, `main` e `System.out.println`.
-- Declaração de variáveis.
-- Tipos primitivos: `int`, `double`, `boolean`, `char`.
+- Declaração de variáveis e primeiros identificadores.
+- Tipos primitivos: `int`, `double`, `boolean` e `char`.
 - Inferência de tipos com `var`.
 - Promoções automáticas de tipo.
 - Primeiros exercícios práticos com lógica simples.
+
+Principal aprendizado da seção: os fundamentos mostram como um programa Java nasce, desde a estrutura básica até o uso de variáveis, tipos e primeiras instruções de saída.
 
 ---
 
 ### Seção 11 – Operadores
 
-- Operadores aritméticos: `+`, `-`, `*`, `/`, `%`.
-- Operadores relacionais: `>`, `<`, `>=`, `<=`, `==`, `!=`.
-- Operadores lógicos: `&&`, `||`, `!`.
+- Operadores aritméticos: `+`, `-`, `*`, `/` e `%`.
+- Operadores relacionais: `>`, `<`, `>=`, `<=`, `==` e `!=`.
+- Operadores lógicos: `&&`, `||` e `!`.
 - Precedência de operadores.
-- Expressões matemáticas e lógicas em Java.
+- Construção de expressões matemáticas e lógicas.
+- Exercícios simples envolvendo cálculos e comparações.
+
+Principal aprendizado da seção: operadores são a base para criar expressões, comparar valores e construir decisões dentro de um programa Java.
 
 ---
 
@@ -52,7 +57,11 @@ Nesta seção, resumo os principais tópicos estudados em cada parte do curso.
 - Estruturas condicionais com `if`, `else if` e `else`.
 - Uso de `switch`.
 - Entrada de dados com `Scanner`.
-- Exercícios envolvendo decisões e validações simples.
+- Validação de informações digitadas pelo usuário.
+- Construção de decisões simples no programa.
+- Exercícios práticos envolvendo regras e condições.
+
+Principal aprendizado da seção: controles de fluxo permitem que o programa tome decisões diferentes conforme os dados recebidos e as regras definidas.
 
 ---
 
@@ -60,26 +69,26 @@ Nesta seção, resumo os principais tópicos estudados em cada parte do curso.
 
 - Estruturas de repetição com `for`, `while` e `do-while`.
 - Uso de `break` e `continue`.
-- Controle de fluxo dentro de repetições.
-- Exercícios práticos com contadores, validações e repetições.
+- Controle de fluxo dentro das repetições.
+- Criação de contadores.
+- Validações repetidas.
+- Exercícios práticos com repetição de comandos e lógica incremental.
+
+Principal aprendizado da seção: loops permitem repetir tarefas de forma controlada, reduzindo repetição de código e fortalecendo a lógica de programação.
 
 ---
 
 ### Seção 14 – Princípios de Programação Orientada a Objetos (POO)
 
-- Classes e objetos.
-- Atributos e métodos.
-- Variáveis de instância.
+- Criação de classes, objetos, atributos e métodos.
+- Uso de variáveis de instância.
 - Construtores com e sem parâmetros.
-- Sobrecarga de construtores.
-- Palavra-chave `this`.
-- Encapsulamento com `private`, getters e setters.
-- Validação de atributos.
+- Sobrecarga de construtores e uso da palavra-chave `this`.
+- Encapsulamento com `private`, getters, setters e validações.
 - Modificadores de acesso: `public`, `private`, `protected` e default.
-- Organização com pacotes.
-- Métodos e atributos `static`.
-- Criação de classes utilitárias.
-- Prática com um pequeno projeto em Java puro usando POO.
+- Organização com pacotes, membros `static` e classes utilitárias.
+
+Principal aprendizado da seção: a POO ajuda a organizar melhor o código, separando responsabilidades e aproximando a estrutura do programa de entidades do mundo real.
 
 ---
 
@@ -87,10 +96,12 @@ Nesta seção, resumo os principais tópicos estudados em cada parte do curso.
 
 - Criação e uso de arrays em Java.
 - Armazenamento de múltiplos valores em uma única estrutura.
-- Acesso a posições por índice.
+- Acesso aos elementos por índice.
 - Percorrendo arrays com estruturas de repetição.
 - Relação entre arrays e organização de dados.
-- Prática com exercícios simples para reforçar lógica e manipulação de conjuntos de valores.
+- Exercícios simples para reforçar lógica e manipulação de conjuntos de valores.
+
+Principal aprendizado da seção: arrays permitem trabalhar com vários valores relacionados dentro de uma mesma estrutura, reforçando a lógica de repetição e acesso por posição.
 
 ---
 
@@ -100,17 +111,9 @@ Nesta seção, resumo os principais tópicos estudados em cada parte do curso.
 - Conceito de superclasse e subclasse.
 - Princípio do “é um”.
 - Reaproveitamento de atributos e métodos.
-- Sobrescrita de métodos.
-- Diferença entre sobrescrita e sobrecarga.
-- Uso da annotation `@Override`.
-- Uso da palavra-chave `super`.
-- Uso de `super` em construtores.
-- Relação entre herança e encapsulamento.
-- Modificadores de acesso com pacotes.
-- Exercícios práticos com:
-  - `Veiculo` e `Carro`;
-  - `Funcionario` e `Assistente`;
-  - `Pessoa` e `Estudante`.
+- Sobrescrita de métodos e uso de `@Override`.
+- Uso da palavra-chave `super` em métodos e construtores.
+- Exercícios práticos com `Veiculo` e `Carro`, `Funcionario` e `Assistente`, `Pessoa` e `Estudante`.
 
 Principal aprendizado da seção: herança não deve ser usada apenas para reaproveitar código. Antes de usar `extends`, é necessário existir uma relação real de especialização entre as classes.
 
@@ -122,16 +125,29 @@ Principal aprendizado da seção: herança não deve ser usada apenas para reapr
 - Diferença entre annotation e comentário.
 - Annotations como metadados no código.
 - Uso de annotations predefinidas da linguagem.
-- Uso de `@Override` para validar sobrescrita de métodos.
-- Uso de `@Deprecated` para indicar métodos obsoletos.
-- Uso de `@SuppressWarnings` para suprimir avisos do compilador.
-- Relação entre annotations e compilador.
-- Cuidados ao esconder warnings.
-- Primeira visão sobre como annotations aparecem futuramente em frameworks Java back-end, como Spring Boot.
+- Uso de `@Override`, `@Deprecated` e `@SuppressWarnings`.
+- Relação entre annotations, compilador e avisos de código.
+- Primeira visão sobre o uso de annotations em frameworks Java back-end.
 
 Principal aprendizado da seção: annotations não são comentários decorativos. Elas fornecem informações úteis para o compilador, ferramentas, bibliotecas e frameworks.
 
 ---
+
+### Seção 18 – Imutabilidade
+
+- Conceito inicial de imutabilidade em Java.
+- Uso da palavra-chave `final`.
+- Aplicação de `final` em variáveis, métodos e classes.
+- Criação de constantes e convenção de nomes em letras maiúsculas.
+- Diferença entre `private` e `final`.
+- Relação entre `final`, `@Override`, herança e sobrescrita.
+- Introdução ao uso de `enum` como conjunto fixo de constantes.
+
+Principal aprendizado da seção: `final` pode ser usado em diferentes contextos. Em variáveis, impede nova atribuição; em métodos, impede sobrescrita; em classes, impede herança. Também ficou claro que `private` controla acesso, enquanto `final` controla alteração.
+
+---
+
+
 
 ## 🗂️ Organização das Seções
 
