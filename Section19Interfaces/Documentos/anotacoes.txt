@@ -1,0 +1,226 @@
+Seção 19 - Interfaces
+
+Iniciando as aulas sobre interfaces em Java.
+
+A funcionalidade de interfaces ainda está um pouco confusa para mim, mas a ideia começou a fazer mais sentido com o exemplo do cardápio.
+
+No exemplo, o cardápio seria a interface, e os chefes de cozinha seriam as classes Java.
+
+Se no cardápio existe o prato "macarrão à bolonhesa", cada chefe que implementar aquele cardápio será obrigado a preparar esse prato. Um chefe pode ferver a água primeiro e depois colocar o macarrão. Outro pode colocar o macarrão na água fria e ferver tudo junto.
+
+O jeito de preparar pode mudar, mas o resultado esperado é o mesmo: os dois precisam implementar aquilo que está definido no cardápio.
+
+Em Java, a interface funciona mais ou menos assim:
+
+* a interface define o que precisa existir;
+* a classe que implementa decide como aquilo será feito;
+* classes diferentes podem implementar o mesmo contrato de formas diferentes.
+
+Dúvida sobre organização em pacotes
+
+Eu sei que, em um programa, uma classe Produto pode ser uma entidade do sistema, criada dentro do package entidades e depois importada onde for necessário.
+
+Ainda estou entendendo melhor onde as interfaces entram na estrutura do sistema.
+
+Por exemplo, em um ERP ou sistema maior, temos pacotes como entidades, servicos, util e outros. A dúvida é: em qual package as interfaces devem ficar?
+
+Pelo que entendi até aqui, isso depende da organização do projeto. Em exercícios simples, posso criar um package interfaces. Em projetos maiores, a interface pode ficar próxima da responsabilidade que ela representa.
+
+Exemplo:
+
+* interfaces/
+* entidades/
+* servicos/
+
+Ou, dependendo do projeto:
+
+* servicos/
+
+  * Pagamento.java
+  * PagamentoPix.java
+  * PagamentoCartao.java
+
+Ainda preciso praticar mais para entender melhor essa organização.
+
+Exemplo prático pensado: forma de pagamento
+
+Ao buscar entender por que interfaces podem ser úteis, pensei em uma situação comum em vários sistemas: formas de pagamento.
+
+Uma interface poderia exigir a criação de um método relacionado ao pagamento, por exemplo:
+
+formaPagamento()
+
+Quando o cliente compra algo e vai para o carrinho, a classe responsável por processar o pagamento pode oferecer três opções:
+
+* Pix;
+* cartão de crédito;
+* boleto.
+
+Cada uma dessas opções poderia ser uma classe diferente.
+
+Exemplo:
+
+* PagamentoPix;
+* PagamentoCartaoCredito;
+* PagamentoBoleto.
+
+Todas seriam obrigadas a implementar o método definido pela interface.
+
+Cada uma faria de um jeito:
+
+* Pix gera um QR Code;
+* cartão solicita os dados do cartão;
+* boleto gera um boleto para o cliente.
+
+Acredito que, praticando mais, esse entendimento vai melhorar.
+
+Observação importante
+
+É bom anotar que o uso de @Override é uma boa prática mesmo quando estamos implementando métodos de interfaces.
+
+Ele ajuda a deixar claro que aquele método veio de um contrato e também ajuda o compilador a identificar erros.
+
+Regras de interface
+
+* Interfaces não podem ser instanciadas diretamente.
+* Ou seja, não se cria objeto diretamente de uma interface.
+* Atributos criados em interfaces são sempre public, static e final.
+* Métodos criados em interfaces são public por padrão.
+* Métodos abstratos de interfaces também são abstract por padrão.
+* Uma interface pode estender uma ou mais interfaces.
+* Uma classe pode estender apenas uma classe.
+* Uma classe pode implementar uma ou mais interfaces.
+
+Exercício 01
+
+O exercício 01 foi concluído com facilidade.
+
+Foi criada a interface Veiculo e ela foi implementada nas classes Carro e Caminhao.
+
+O método iniciar recebeu um parâmetro. Essa foi uma opção minha, para testar melhor como criar e usar métodos com parâmetro em uma interface.
+
+Cada classe devolveu sua própria String.
+
+O método parar seguiu o mesmo padrão, mas sem parâmetro.
+
+O retorno do método iniciar acabou ficando sem muita função prática, mas serviu para fins didáticos.
+
+Já o método buzinar foi sobrescrito apenas na classe Carro. Na classe Caminhao, eu usei o método criado diretamente na interface, para testar o reaproveitamento de código com método default.
+
+Exercício 02
+
+O exercício 02 foi mais difícil para mim no começo. Demorei bastante para entender como fazer, mas consegui concluir.
+
+Primeiro, criei a interface com os métodos solicitados pelo exercício.
+
+Depois, criei a classe Pedido, fazendo o import necessário.
+
+Dentro da classe Pedido, criei três atributos:
+
+* um array de itens;
+* um array de preços;
+* uma variável int para controlar a quantidade de itens.
+
+Também criei o construtor. Essa foi a parte que mais deu trabalho para entender.
+
+O construtor recebeu o parâmetro capacidadeMaxima e iniciou a variável quantidadeItens com 0.
+
+Depois implementei o método adicionarItem(String item, double preco).
+
+Cada vez que um item é adicionado, o terminal exibe a descrição do item:
+
+System.out.println("Item adicionado: " + item + " - Preço: " + preco);
+
+As informações são guardadas nos respectivos arrays.
+
+Também usei um for dentro do método calcularTotal() para somar os preços do array precos e retornar o total.
+
+Na classe Main, instanciei um objeto Pedido. Com esse objeto, cadastrei três itens nos arrays e depois solicitei apenas a impressão do total chamando o método calcularTotal().
+
+Saída no terminal:
+
+C:\Curso_Java\JavaModerno\Section19Interfaces\Exercicios\exercicio02Restaurante>java Main
+Item adicionado: Hamburguer - Preço: 15.5
+Item adicionado: Batata frita - Preço: 10.5
+Item adicionado: Refrigerante - Preço: 5.5
+Total do pedido: 31.5
+
+Exercício 03
+
+O primeiro passo foi criar a interface Produto dentro da pasta interfaces.
+
+Como interfaces em Java não devem guardar atributos de instância, como nome e quantidade, a solução foi declarar métodos de acesso, ou seja, getters e setters.
+
+Isso garante que qualquer classe que implemente essa interface seja obrigada a fornecer uma forma de ler e alterar o nome e a quantidade.
+
+O segundo passo foi criar a classe ProdutoImpl dentro da pasta entidades, implementando a interface com implements Produto.
+
+Nessa classe, os atributos reais nome e quantidade foram declarados como private.
+
+Cada método da interface foi implementado com @Override, devolvendo ou alterando esses atributos.
+
+O terceiro passo foi adicionar um construtor na classe ProdutoImpl, recebendo nome e quantidade como parâmetros.
+
+Usei:
+
+this.nome = nome;
+this.quantidade = quantidade;
+
+Isso inicializa os atributos assim que um objeto ProdutoImpl é criado, evitando que o produto comece vazio.
+
+O quarto passo foi criar dois métodos novos. Eles não vieram da interface, mas foram pedidos como funcionalidade extra da classe:
+
+adicionarQuantidade(int quantidade)
+
+Esse método soma o valor recebido ao estoque atual usando:
+
+this.quantidade += quantidade;
+
+removerQuantidade(int quantidade)
+
+Esse método primeiro verifica, com if, se a quantidade a remover é maior do que o estoque disponível.
+
+Se for maior, exibe a mensagem:
+
+"Quantidade insuficiente em estoque!"
+
+Nesse caso, nenhuma alteração é feita.
+
+Se houver estoque suficiente, a quantidade é subtraída normalmente com:
+
+this.quantidade -= quantidade;
+
+O quinto e último passo foi montar o Main.java, que serve para demonstrar o funcionamento de tudo na prática.
+
+Nele, um objeto ProdutoImpl foi criado com estoque inicial de 50.
+
+Depois foram chamados os métodos:
+
+adicionarQuantidade(20)
+
+O estoque subiu para 70.
+
+removerQuantidade(15)
+
+O estoque desceu para 55.
+
+removerQuantidade(80)
+
+Essa chamada dispara a mensagem de erro, porque o estoque de 55 é insuficiente para remover 80.
+
+Com isso, o valor final do estoque permanece em 55.
+
+Resumo pessoal da seção até aqui
+
+Interfaces começaram um pouco confusas, mas o conceito está ficando mais claro.
+
+A ideia principal é que uma interface funciona como um contrato.
+
+Ela define o que uma classe precisa fazer, mas não define exatamente como a classe vai fazer.
+
+O ponto mais importante para guardar é:
+
+interface define o contrato;
+classe implementa o comportamento.
+
+Também ficou claro que interfaces ajudam a organizar melhor o código e podem ser muito úteis quando diferentes classes precisam seguir o mesmo padrão de comportamento.
