@@ -147,6 +147,30 @@ Principal aprendizado da seção: `final` pode ser usado em diferentes contextos
 
 ---
 
+### Seção 19 – Interfaces
+
+- Conceito inicial de interfaces em Java.
+- Uso da palavra-chave `interface`.
+- Uso de `implements` para implementar uma interface.
+- Diferença entre `extends` e `implements`.
+- Interfaces como contratos de comportamento.
+- Criação de métodos abstratos em interfaces.
+- Implementação obrigatória dos métodos nas classes concretas.
+- Uso de `@Override` ao implementar métodos de uma interface.
+- Regras importantes de interfaces:
+  - interfaces não podem ser instanciadas diretamente;
+  - atributos em interfaces são `public static final` por padrão;
+  - métodos abstratos em interfaces são `public abstract` por padrão.
+- Herança entre interfaces com `extends`.
+- Implementação de métodos herdados de outras interfaces.
+- Uso de métodos `default` em interfaces.
+- Uso de métodos `static` em interfaces.
+- Diferença entre método abstrato, método `default` e método `static`.
+- Aplicação prática de interfaces em exercícios com veículos, pedidos de restaurante e controle de estoque.
+
+Principal aprendizado da seção: interfaces funcionam como contratos de comportamento. Elas definem o que uma classe deve fazer, mas quem implementa o comportamento real é a classe concreta. Também ficou claro que `implements` é usado para implementar interfaces, enquanto `extends` é usado para herança. A seção foi desafiadora, especialmente no entendimento inicial do conceito, mas ajudou a reforçar a organização do código e a importância de separar contrato e implementação.
+
+---
 
 ---
 
