@@ -1,0 +1,52 @@
+**** Seção 20 sendo iniciada
+
+Conceito de abstração ele permite?
+R: Ser abstrato, nesse contexto, é definir apenas o "o quê" precisa ser feito, sem se comprometer com o "como" será feito. No exemplo do PDF, a classe Carro declara que todo carro deve saber acelerar() (isso é uma obrigação, um contrato), mas ela não diz como essa aceleração acontece na prática. Essa decisão fica por conta de cada subclasse concreta, como CarroF1, que implementa a aceleração do seu próprio jeito.
+
+O que é abstração em termos de orientação em objetos?
+R: abstração é representar em uma classe apenas as características e comportamentos essenciais de um objeto, deixando de lado detalhes que não são importantes naquele contexto.
+
+Toda classe abstrata é interface?
+R: Não, uma classe abstrata não é uma interface, embora os dois conceitos se pareçam em alguns pontos (ambos podem definir métodos sem implementação para forçar que as classes filhas os implementem). Mas são construções diferentes em Java, com propósitos e regras distintas.
+
+No dia a dia é comum o uso de ambas (interfaces e classes abstratas)?
+R: No dia a dia, interfaces são usadas com muito mais frequência do que classes abstratas na maioria dos projetos Java modernos.
+
+Uma classe abstrata sempre vai usar o extends enquanto as interfaces vao usar implements ?
+Sim, essa é a regra geral: uma classe concreta que herda de uma classe abstrata usa extends (como no exemplo do PDF, class CarroF1 extends Carro), enquanto uma classe que cumpre um contrato de interface usa implements.                                                        Só duas exceções vale saber: uma classe abstrata pode usar implements para implementar uma interface (é a regra 5 do PDF, "podem implementar interfaces"), e uma interface pode usar extends para herdar de outra interface (interfaces suportam herança múltipla entre si, diferente de classes).
+
+
+**** na parte introdutoria esclareci essas dúvidas acima e agora vou elaborar o primeiro fonte junto com o professor...
+
+**** Regras importantes sobre classes abstratas 
+
+1 - Não podem ser instanciadas (TestNaoInstanciavel.java).
+
+2 - Podem conter métodos abstratos e não abstratos (TestMetodosAbstratoConcreto.java).
+
+3 - Podem conter construtores (TestConstrutorAbstrato.java).
+
+4 -Podem conter campos (TestCamposAbstrata.java).
+
+5 -Podem implementar interfaces (TestAbstractInterface.java).
+
+feito 5 programas para exemplificar bem os conceitos que aprendi até aqui.
+
+
+**** feito os fontes do professor....
+
+
+fazendo o exercicio 01 e indo além: 
+
+Math.PI não é um método, é uma constante já pronta na linguagem. Ela é declarada dentro da classe Math (que fica no pacote java.lang, importado automaticamente em todo programa Java) como um campo public static final double, com o valor 3.141592653589793 já embutido  
+Math.PI em Java + 3
+
+
+O fato de ser final significa que esse valor nunca muda, você não consegue reatribuir ou alterar Math.PI em nenhum momento do programa. E por ser static, você acessa diretamente pelo nome da classe, Math.PI, sem precisar instanciar nada, é só usar o valor como se fosse uma variável pronta  
+Classe Math: constantes, principais métodos e chamando ... + 2
+
+
+Isso é diferente de algo como Math.pow(raio, 2), que aí sim é um método, uma função que recebe parâmetros e realiza um cálculo. Math.PI é só o valor de pi guardado como constante para você usar nas suas contas, como fizemos no cálculo da área e do perímetro do círculo  
+
+
+feito os exercicios com enfase no primeiro onde pesquisei formulas prontas do java.lang para aprofundar e sanar algumas curiosidades que eu tinha deu tudo certo agora vamos registrar tudo isso.
