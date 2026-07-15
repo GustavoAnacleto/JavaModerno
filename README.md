@@ -171,6 +171,63 @@ Principal aprendizado da seção: `final` pode ser usado em diferentes contextos
 Principal aprendizado da seção: interfaces funcionam como contratos de comportamento. Elas definem o que uma classe deve fazer, mas quem implementa o comportamento real é a classe concreta. Também ficou claro que `implements` é usado para implementar interfaces, enquanto `extends` é usado para herança. A seção foi desafiadora, especialmente no entendimento inicial do conceito, mas ajudou a reforçar a organização do código e a importância de separar contrato e implementação.
 
 ---
+### Seção 20 – Classes Abstratas
+
+- Conceito inicial de abstração em Java.
+- Diferença entre generalização e especialização.
+- Criação de classes abstratas com a palavra-chave `abstract`.
+- Impossibilidade de instanciar classes abstratas diretamente.
+- Criação de métodos abstratos sem implementação.
+- Implementação obrigatória dos métodos abstratos nas subclasses concretas.
+- Uso de métodos concretos dentro de classes abstratas.
+- Uso de atributos para representar o estado dos objetos.
+- Criação de construtores em classes abstratas.
+- Uso de `super` para chamar o construtor da superclasse.
+- Herança de classes abstratas com `extends`.
+- Sobrescrita de métodos com `@Override`.
+- Reutilização de atributos e comportamentos comuns.
+- Diferença entre classes abstratas e interfaces.
+- Classes abstratas implementando interfaces.
+- Implementação de várias interfaces por uma mesma classe.
+- Diferença entre herança simples de classes e herança múltipla de tipos.
+- Aplicação prática em exercícios com figuras geométricas e uma loja abstrata.
+- Uso inicial do polimorfismo por meio de referências de classes abstratas.
+
+Principal aprendizado da seção: uma classe abstrata funciona como uma base parcialmente pronta para outras classes. Ela pode armazenar estado, possuir construtores, fornecer comportamentos comuns e obrigar as subclasses concretas a implementar aquilo que varia. Também ficou mais clara a diferença entre classes abstratas e interfaces: a classe abstrata pode reunir estado e implementação compartilhada, enquanto a interface representa principalmente um contrato de comportamento.
+
+---
+
+### Seção 21 – Polimorfismo
+
+- Conceito inicial de polimorfismo em Java.
+- Significado da expressão “muitas formas”.
+- Relação entre polimorfismo, herança, classes abstratas e interfaces.
+- Diferença entre o tipo da referência e o tipo real do objeto.
+- Uso de referências de superclasses apontando para objetos de subclasses.
+- Entendimento de que o objeto não muda de classe por causa da referência utilizada.
+- Uso de classes abstratas como tipos de referência.
+- Uso de interfaces como tipos de referência.
+- Sobrescrita de métodos com `@Override`.
+- Execução da implementação correspondente ao tipo real do objeto.
+- Escolha do método sobrescrito durante o runtime.
+- Uso do mesmo método com comportamentos diferentes.
+- Criação de métodos que recebem tipos mais gerais.
+- Redução de repetição e aumento da flexibilidade do código.
+- Estudo da classe `Object` como raiz da hierarquia de classes.
+- Herança direta e indireta da classe `Object`.
+- Uso de `Object` como tipo de referência.
+- Diferença entre os métodos conhecidos pela referência e os comportamentos do objeto real.
+- Conceito de upcasting para tipos mais gerais.
+- Conceito de downcasting para tipos mais específicos.
+- Conversão explícita de referências por meio de casting.
+- Risco de `ClassCastException` em conversões incompatíveis.
+- Uso de `instanceof` para verificar o tipo antes do downcasting.
+- Diferença entre sobrescrita e sobrecarga.
+- Aplicação prática em exercícios com gerenciamento de veículos e calculadora polimórfica.
+
+Principal aprendizado da seção: o polimorfismo permite tratar objetos de classes diferentes por meio de um tipo mais geral compartilhado. O tipo da referência determina quais métodos podem ser acessados durante a compilação, enquanto o tipo real do objeto determina qual implementação sobrescrita será executada em runtime. Também ficou claro que o objeto não muda de classe: o que muda é a maneira como ele pode ser referenciado dentro de uma hierarquia. Esse recurso ajuda a reduzir repetição, criar métodos mais gerais e tornar o código mais flexível e fácil de estender.
+
+---
 
 ---
 
@@ -180,8 +237,9 @@ Principal aprendizado da seção: interfaces funcionam como contratos de comport
 A partir das seções práticas, venho mantendo uma estrutura parecida com esta:
 
 ```text
-SectionXXNomeDaSecao/
+Section21Polimorfismo/
 ├── Documentos/
+│   └── anotacoes.txt
 ├── Exercicios/
 ├── Fontes/
-├── SolucoesExercicios/
+└── SolucoesExercicios/
