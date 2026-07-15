@@ -1,0 +1,297 @@
+SEÇÃO 21 - POLIMORFISMO
+
+Animal meuCachorro = new Cachorro();
+
+Neste caso:
+
+- Animal é o tipo da referência;
+- Cachorro é o tipo real do objeto;
+- o objeto continua sendo um Cachorro;
+- ele está apenas sendo acessado por uma referência mais geral do tipo Animal.
+
+Então, "assumir várias formas" significa que objetos de classes diferentes podem ser tratados por meio de um tipo comum.
+
+IDEIA PRINCIPAL DO POLIMORFISMO
+
+O polimorfismo permite declarar uma referência com um tipo mais geral e criar um objeto de um tipo mais específico.
+
+Exemplos:
+
+Animal meuCachorro = new Cachorro();
+Animal meuGato = new Gato();
+
+Os dois objetos podem ser tratados como Animal porque Cachorro e Gato são tipos de Animal.
+
+Quando eu chamo o mesmo método:
+
+meuCachorro.fazerSom();
+meuGato.fazerSom();
+
+o Java executa o método correspondente ao tipo real de cada objeto.
+
+O cachorro faz seu próprio som e o gato faz seu próprio som.
+
+
+TIPO DA REFERÊNCIA E TIPO REAL DO OBJETO
+
+Este foi o ponto mais importante para eu entender o polimorfismo.
+
+O tipo da referência determina quais métodos e membros podem ser acessados diretamente durante a compilação.
+
+Exemplo:
+
+Animal animal = new Cachorro();
+
+Se Animal possui o método fazerSom(), a chamada compila:
+
+animal.fazerSom();
+
+Durante a execução, o Java percebe que o objeto real é um Cachorro e chama o método fazerSom() implementado por Cachorro.
+
+O objeto real decide o comportamento sobrescrito, mas o método precisa ser conhecido pelo tipo da referência.
+
+
+POLIMORFISMO E SOBRESCRITA
+
+O exemplo estudado utiliza sobrescrita de métodos.
+
+A superclasse ou interface declara um método comum e cada subclasse fornece sua própria implementação usando @Override.
+
+Não devo confundir sobrescrita com sobrecarga.
+
+- Sobrescrita: a subclasse redefine um método herdado com a mesma assinatura.
+- Sobrecarga: existem métodos com o mesmo nome, mas com parâmetros diferentes.
+
+No polimorfismo estudado nesta seção, o comportamento diferente acontece por causa da sobrescrita.
+
+POLIMORFISMO COM CLASSE ABSTRATA
+
+Uma classe abstrata pode ser usada como tipo de referência, mesmo não podendo ser instanciada diretamente.
+
+Exemplo:
+
+Animal animal = new Cachorro();
+
+Eu não posso fazer:
+
+Animal animal = new Animal();
+
+porque Animal é abstrata.
+
+Mas posso usar Animal como tipo da referência para qualquer objeto de uma subclasse concreta compatível.
+
+A classe abstrata pode possuir:
+
+- atributos;
+- construtores;
+- métodos concretos;
+- métodos abstratos.
+
+Os métodos concretos podem fornecer comportamentos comuns e os métodos abstratos obrigam as subclasses a implementarem aquilo que varia.
+
+
+POLIMORFISMO COM INTERFACES
+
+Uma interface também pode ser usada como tipo de referência.
+
+Exemplo:
+
+Veiculo meuCarro = new Carro();
+Veiculo minhaMoto = new Moto();
+
+As classes Carro e Moto implementam a interface Veiculo e fornecem suas próprias versões do método acelerar().
+
+Quando eu chamo:
+
+meuCarro.acelerar();
+minhaMoto.acelerar();
+
+cada objeto executa a implementação definida em sua própria classe.
+
+Um ajuste importante:
+
+A interface não se torna a superclasse da classe que a implementa.
+
+Ela funciona como um supertipo de referência e define um contrato que as classes concretas precisam cumprir.
+
+Para herança entre classes, uso extends.
+Para uma classe implementar uma interface, uso implements.
+
+
+MÉTODOS QUE RECEBEM TIPOS MAIS GERAIS
+
+Uma vantagem do polimorfismo é poder criar um único método que recebe um tipo mais geral.
+
+Exemplo:
+
+public static void iniciarAceleracao(Veiculo veiculo) {
+    veiculo.acelerar();
+}
+
+Esse método pode receber um Carro, uma Moto ou qualquer outra classe que implemente Veiculo.
+
+Isso reduz repetição porque não preciso criar um método diferente para cada tipo de veículo.
+
+Também facilita a inclusão de novas classes no futuro.
+
+
+A CLASSE OBJECT
+
+A classe Object está no topo da hierarquia de classes do Java.
+
+Todas as classes herdam de Object de forma direta ou indireta.
+
+Se uma classe não declara outra superclasse, Object é considerada sua superclasse direta.
+
+Exemplo:
+
+class Animal {
+}
+
+Para compreender a hierarquia, isso equivale a:
+
+class Animal extends Object {
+}
+
+Não preciso escrever extends Object porque essa herança já é implícita.
+
+O compilador não altera literalmente meu arquivo-fonte. Ele apenas trata Object como a superclasse quando nenhuma outra é declarada.
+
+Exemplo de hierarquia:
+
+Object
+  Animal
+    Cachorro
+    Gato
+
+Animal herda diretamente de Object.
+Cachorro e Gato herdam indiretamente de Object por meio de Animal.
+
+
+OBJECT COMO TIPO DE REFERÊNCIA
+
+Como Object está no topo da hierarquia, posso fazer:
+
+Object meuCachorro = new Cachorro();
+
+Essa atribuição é válida porque Cachorro também é um Object.
+
+Porém, não posso chamar diretamente:
+
+meuCachorro.fazerSom();
+
+O objeto real é um Cachorro, mas a referência foi declarada como Object.
+
+Como Object não possui o método fazerSom(), o compilador não permite a chamada.
+
+Se eu declarar como Animal, o método fica disponível:
+
+Animal meuCachorro = new Cachorro();
+meuCachorro.fazerSom();
+
+Por isso, não é uma boa ideia declarar tudo como Object sem necessidade.
+
+Devo escolher o tipo geral mais adequado aos comportamentos que preciso utilizar.
+
+
+UPCASTING
+
+Upcasting é a conversão de um tipo mais específico para um tipo mais geral da hierarquia.
+
+Exemplo:
+
+Animal animal = new Cachorro();
+
+ou:
+
+Object objeto = new Cachorro();
+
+Esse tipo de conversão é feito automaticamente porque todo Cachorro é um Animal e também é um Object.
+
+
+DOWNCASTING
+
+Downcasting é a conversão de uma referência mais geral para um tipo mais específico.
+
+Exemplo:
+
+Object meuCachorro = new Cachorro();
+Cachorro cachorroConvertido = (Cachorro) meuCachorro;
+
+Depois da conversão, posso chamar:
+
+cachorroConvertido.fazerSom();
+
+Também posso converter e chamar o método diretamente:
+
+((Cachorro) meuCachorro).fazerSom();
+
+O casting não cria um novo objeto e não transforma o objeto em Cachorro.
+
+O objeto já era um Cachorro.
+
+O casting apenas permite que a referência seja tratada como Cachorro naquele ponto do código.
+
+
+RISCO DO CASTING INCORRETO
+
+Nem todo casting aceito pelo compilador será válido durante a execução.
+
+Exemplo incorreto:
+
+Object meuGato = new Gato();
+Cachorro cachorro = (Cachorro) meuGato;
+
+Esse código tenta tratar um objeto Gato como Cachorro.
+
+A conversão pode compilar, mas causará ClassCastException em runtime.
+
+O casting precisa ser compatível com o tipo real do objeto.
+
+INSTANCEOF
+
+Quando eu não tiver certeza sobre o tipo real do objeto, posso verificar antes de realizar o downcasting.
+
+Exemplo:
+
+if (meuCachorro instanceof Cachorro) {
+    Cachorro cachorro = (Cachorro) meuCachorro;
+    cachorro.fazerSom();
+}
+
+O instanceof verifica se o objeto é compatível com o tipo informado.
+
+Isso ajuda a evitar um downcasting incompatível e uma ClassCastException.
+
+
+PRINCIPAIS BENEFÍCIOS DO POLIMORFISMO
+
+- reutilização de código;
+- redução de repetição;
+- métodos que trabalham com tipos mais gerais;
+- possibilidade de tratar objetos diferentes por meio de um contrato comum;
+- facilidade para adicionar novas subclasses ou implementações;
+- maior flexibilidade;
+- melhor organização do código orientado a objetos.
+
+
+ERROS QUE PRECISO EVITAR
+
+- pensar que o objeto muda de classe por causa da referência;
+- esquecer que o tipo da referência controla os métodos acessíveis;
+- confundir sobrescrita com sobrecarga;
+- usar extends quando deveria usar implements;
+- tratar uma interface como se fosse uma superclasse;
+- declarar tudo como Object sem necessidade;
+- fazer downcasting sem verificar o tipo real;
+- acreditar que casting cria um novo objeto;
+- esquecer que uma conversão incorreta pode causar ClassCastException.
+
+PONTOS QUE QUERO CONTINUAR OBSERVANDO
+
+- quando é melhor declarar uma variável com a classe concreta;
+- quando é melhor utilizar uma superclasse ou interface como tipo da referência;
+- como identificar casting desnecessário;
+- quando o downcasting realmente é necessário;
+- como o polimorfismo será utilizado em arrays, coleções e métodos maiores;
+- como esses conceitos aparecerão futuramente em projetos Java back-end.
