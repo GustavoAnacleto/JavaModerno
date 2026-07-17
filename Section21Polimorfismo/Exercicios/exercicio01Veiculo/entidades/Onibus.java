@@ -2,22 +2,21 @@ package entidades;
 
 public class Onibus extends Veiculo{
 
-	private int acentos;
+	private int assentos;
 
-	public Onibus(String placa, int ano, int acentos){
+	public Onibus(String placa, int ano, int assentos){
 		super(placa, ano);
-		this.acentos = acentos;
+		this.assentos = assentos;
 	}
 
-	@Override
-	public void exibirInformacoes(){
-		System.out.println("Placa Onibus: " + getPlaca() + 
-			"\nAno carro: " + getAno() + 
-			"\nAcentos: " + getAcentos());
-	}
+    @Override
+    public void exibirInformacoes() {
+        super.exibirInformacoes();
+        System.out.println("Assentos: " + assentos);
+    }
 
-	public int getAcentos(){
-		return acentos;
+	public int getAssentos(){
+		return assentos;
 	}
 
 

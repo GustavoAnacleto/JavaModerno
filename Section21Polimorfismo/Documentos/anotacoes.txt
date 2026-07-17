@@ -51,7 +51,7 @@ Durante a execução, o Java percebe que o objeto real é um Cachorro e chama o 
 O objeto real decide o comportamento sobrescrito, mas o método precisa ser conhecido pelo tipo da referência.
 
 
-POLIMORFISMO E SOBRESCRITA b
+POLIMORFISMO E SOBRESCRITA 
 
 O exemplo estudado utiliza sobrescrita de métodos.
 

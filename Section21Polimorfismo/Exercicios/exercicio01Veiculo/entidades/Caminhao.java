@@ -1,8 +1,8 @@
 package entidades;
 
-public class Caminhao extends Veiculo{
+public class Caminhao extends Veiculo {
 
-	public int eixos;
+	private int eixos;
 
 	public Caminhao(String placa, int ano, int eixos){
 		super(placa, ano);
@@ -11,8 +11,7 @@ public class Caminhao extends Veiculo{
 
 	@Override
 	public void exibirInformacoes(){
-		System.out.println("Placa caminhão: " + getPlaca() + 
-			"\nAno carro: " + getAno() + 
-			"\nAcentos: " + eixos);
+			super.exibirInformacoes();
+			System.out.println("Eixos: " + eixos);
 	}
 }
