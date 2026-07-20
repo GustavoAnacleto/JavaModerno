@@ -60,6 +60,50 @@ O principal benefício de Generics é combinar reutilização de código com seg
 
 resumo 02 com 200,201 e 202.
 
+_______________________________________________________________________________________________
+
+EXERCICIOS-->
+
+
+Class Peixe criei os atributos como private.
+
+criei os gets
+
+criei um construtor para instanciar o obj somente recebendo os parametros sem o construtor vazio acredito que o exercicio nao pede mas quero treinar isso 
+
+______________________________________________________________________________________________
+
+Class Polvo criei os atributos como private.
+
+criei os gets
+
+criei um construtor para instanciar o obj somente recebendo os parametros sem o construtor vazio acredito que o exercicio nao pede mas quero treinar isso 
+______________________________________________________________________________________________
+
+class Cesto 
+
+criei a class assim public class Cesto<T> 
+
+construto com parametro
+
+getConteudo();
+
+public void guardar(T conteudo) {
+	this.conteudo = conteudo;
+}
+
+public T pegar() {
+	return conteudo;
+}
+______________________________________________________________________________________________
+
+
+
+
+
+
+
+
 
 
 
