@@ -1,32 +1,47 @@
 ? Entender o porque que com a aplicação de Generics posso capturar o problema em ponto de compilação e no polimorfismo o compilador compila e na hora de rodar o erro aparece?
-R: Com Object e casting, o programador afirma qual acredita ser o tipo, e o Java confirma isso durante a execução;
-Com Generics, o tipo é definido antecipadamente, permitindo que o compilador impeça usos incompatíveis.
+
+R: R: Com Object e casting, o programador afirma qual acredita ser o tipo real do objeto. O compilador permite o casting quando ele é possível dentro da hierarquia, mas a JVM confirma o tipo real durante a execução. Se o objeto for de outro tipo, ocorre ClassCastException.
+
+Com Generics, o tipo permitido é definido antecipadamente, permitindo que o compilador rejeite usos incompatíveis e reduzindo a necessidade de casting.
+
+_______________________________________________________________________________________________
 
 ! Apos assistir aulas 196-197 
 
 ? Até agora não entendi onde e porque usar Generics, preciso de exemplos práticos para entender melhor esse conceito? 
-R: muito usado em coleções e para trazer apenas o tipo que precisa e evita erros. 
+
+R: Generics é usado quando uma classe, interface ou método precisa trabalhar com diferentes tipos sem repetir código. Ao utilizar a estrutura, definimos o tipo permitido, como Caixa<String> ou List<Produto>. Assim, o compilador impede valores incompatíveis, o retorno já vem no tipo correto e não precisamos fazer casting. É muito utilizado nas coleções do Java. 
+
+_______________________________________________________________________________________________
 
 ! arquivo Caixa.java criado
 
 ? Caixa<String> caixaDeTexto = new Caixa<>(); depois de fazer isso se eu precisar fazer 
 Caixa<Double> caixaDeNumerosDecimais = new Caixa<>(); eu posso ?
-R: Sim, pode. Você pode criar quantas caixas quiser, cada uma parametrizada com um tipo diferente:
+
+R: Sim. É possível criar vários objetos da mesma classe genérica, cada um parametrizado com um tipo diferente. A Caixa<String> aceitará somente String, enquanto a Caixa<Double> aceitará somente Double. Cada caixa é um objeto independente e o compilador controla o tipo definido para ela.
+
+_______________________________________________________________________________________________
 
 ? no dia a dia de um programador java profissional ele usa muito Generics de 0 a 100 quanto usa? 
-R: Generics aparece praticamente todos os dias no Java profissional, principalmente em coleções, bibliotecas, frameworks, retornos de métodos, repositórios e respostas de APIs. Criar um Generic próprio é menos frequente, mas saber ler e utilizar Generics é indispensável.
 
-! Importante saber que precisa usar as classes Object para trabalhar com os tipos Double, Integer, String e nao os tipos primitivos int.double e etc.
+R: O uso de Generics no Java profissional pode ser considerado aproximadamente 90 de 100, principalmente por aparecer constantemente em coleções, bibliotecas, frameworks, retornos de métodos, repositórios e respostas de APIs. Criar uma classe ou método genérico próprio é menos frequente, mas saber ler e utilizar Generics é indispensável.
+_______________________________________________________________________________________________
 
-aula 198 falou sobre como podemos reutilizar código para criar também uma caixa de números guardando Integer para o obj caixaNumeros e String para o obj CaixaDeTexto.
+! Generics não aceita tipos primitivos, como int, double, boolean e char. É necessário utilizar tipos de referência. Para representar os primitivos, usamos suas classes wrapper, como Integer, Double, Boolean e Character. String pode ser utilizada porque já é uma classe.
 
-ao compilar vimos que o new Integer(3) está em estado obsoleto e na aula 199 ele ensinou o uso de instanciof Integer.valueOf(3).
+_______________________________________________________________________________________________
+
+Na aula 198, foi demonstrado que a mesma classe genérica Caixa<T> pode ser reutilizada para criar objetos de tipos diferentes, como Caixa<Integer> e Caixa<String>. O construtor new Integer(3) está obsoleto. Em seu lugar, podemos usar Integer.valueOf(3) ou simplesmente passar o valor 3, pois o Java realiza o autoboxing de int para Integer.
+
+_______________________________________________________________________________________________
 
 resumo 01 com 196, 197, 198 e 199.
 
-aula 200: explicando que veremos dois modelos 1 com Generics e outro sem 
-ao final dessa aula foi criado:
-! arquivo Brinquedos.java
+Na aula 200, foram criadas as classes Carrinho e Boneca, cada uma com seu atributo, construtor e getter. A classe Brinquedos instancia diretamente os dois tipos e acessa seus métodos específicos. Esse código servirá como base para comparar, nas próximas aulas, um modelo reutilizável sem Generics e outro utilizando Generics.
+
+_______________________________________________________________________________________________
+
 
 
 aula 201: nessa aula criamos os arquivos  Brinquedos.java e CaixaBrinquedos.java
@@ -35,11 +50,15 @@ aonde abordamos o topico a importancia de saber como funciona sem Generics afina
 
 No modelo antigo java anterior ao 5, utilizava-se Object para guardar qualquer tipo de objeto. O objeto mantinha seu tipo real, mas, ao ser recuperado como Object, seus métodos específicos não ficavam acessíveis. Por isso, usava-se instanceof para verificar o tipo real e casting para tratar a referência como Carrinho, Boneca ou outro tipo específico. Um casting incorreto causava ClassCastException durante a execução.
 
-aula 202: arquivos/ CaixaGenerica.java 
+_______________________________________________________________________________________________
 
-nessa aula o professor ensinou como usa-se Generics e disse que ficar um pouco confuso no momento é normal, e com a prática o esclarimento vem... chegamos nos exercicios mas antes vamos criar os resumos e analisar com IA oque está claro o que pode melhorar e o que é mais importante analisar 
+Na aula 202, foi criada a classe CaixaGenerica<T>. O T representa um tipo que será definido quando a caixa for utilizada. A mesma classe pode criar uma CaixaGenerica<Carrinho> e uma CaixaGenerica<Boneca>, reutilizando o comportamento de guardar e pegar sem duplicação de código.
 
+Cada caixa aceita somente o tipo definido em sua declaração. O método pegar() já devolve o objeto no tipo correto, eliminando a necessidade de instanceof e casting manual. Se um tipo incompatível for utilizado, o compilador identifica o erro antes da execução.
 
+O principal benefício de Generics é combinar reutilização de código com segurança de tipos.
+
+resumo 02 com 200,201 e 202.
 
 
 
