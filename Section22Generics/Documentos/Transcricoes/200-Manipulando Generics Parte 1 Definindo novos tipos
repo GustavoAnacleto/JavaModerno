@@ -1,0 +1,67 @@
+200-Manipulando Generics Parte 1 Definindo novos tipos
+
+No exemplo anterior, nós fizemos a caixinha, o nosso tipo de genérico, para guardar string,
+
+depois fizemos para guardar números e agora nós vamos fazer um genérico do nosso tipo e para
+
+guardar objetos que nós criamos. Como que ficaria esse código? E a aplicação do InstanceOff também
+
+que seria necessária. Nós vamos ver dois modelos, um modelo sem a utilização de genéricos e um
+
+modelo com genéricos para ver como fica mais fácil a questão de casting, que não será
+
+necessário fazer e tudo mais. Vamos começar aqui, vamos criar duas classes novas. Vamos começar
+
+aqui criando a classe carrinho, porque eu quero fazer uma caixinha de brinquedos. Vai ficar bem
+
+tranquilo de entender. Para isso nós vamos definir aqui uma variável membro, colocar aqui modelo do
+
+carrinho. Vamos fazer um constructor aqui, recebendo uma string com o modelo do carrinho.
+
+Vou colocar dis.modelo, vou passar aqui para nossa variável membro para inicializar. Muito bem,
+
+agora vamos colocar aqui o método get modelo. Quando nós utilizamos um método para obter um
+
+valor de uma variável membro, geralmente colocamos get, é uma convenção Java. Vamos continuar,
+
+get modelo, aí eu vou retornar, return modelo. Vamos fechar aqui e pronto, a nossa classe carrinho
+
+está pronta, bem simplificada para entender bem o conceito. Vamos fazer agora uma classe
+
+chamada boneca. Nessa classe boneca, vou colocar uma variável membro string aqui, do nome da boneca.
+
+E vamos colocar também aqui um construtor em boneca. Esse construtor recebe um string e
+
+inicializa a variável membro com o nome. Vamos fechar aqui e vamos fechar, vamos fazer um novo método.
+
+É o método get nome da boneca. Vamos retornar aqui a variável membro nome e agora eu vou definir
+
+a minha classe aqui, brinquedos. Então, essa classe brinquedo, ela vai ter o método mem, public
+
+static void mem, recebendo um array de strings, né, normalmente. E agora eu vou criar aqui um
+
+carrinho, t, igual a new carrinho. Vou passar aqui um modelo, por exemplo, um carrinho Hot Wheels.
+
+E agora, vou criar aqui uma boneca, boneca B, igual a new boneca, e vai ser a Barbie.
+
+Vamos imprimir agora esses dois, apenas para ter um método mem aqui, né, repetitivo para
+
+poder testar. O carrinho, vou colocar c.get modelo, tomando o método lá de cima. Agora,
+
+vamos colocar aqui a impressão, vamos colocar a impressão de boneca, concatenado com c.get nome,
+
+para trazer o nome da boneca. Vamos fechar o mem, vamos fechar a classe brinquedo aqui. Agora,
+
+vamos salvar essa classe brinquedo, colocar esse nome nesse arquivo, né. Vamos dar um salvar como
+
+brinquedos.java. Fiz a minha classe brinquedo, vamos ver se ela tá funcionando. Então, vamos
+
+pegar aqui o nosso terminal, vou colocar aqui javacbrinquedos.java. Muito bem, vamos compilar,
+
+vamos ver se tá tudo bem com a classe. Perfeito, carrinho Hot Wheels, boneca Barbie. Nossa classe
+
+brinquedo.java está funcionando. Muito bem, vamos ver se ela tá funcionando, né. Então,
+
+é isso aí galera, eu espero que vocês tenham gostado desse vídeo, se inscrevam no canal,
+
+deixem o seu like, compartilhem o vídeo com seus amigos, e até a próxima. Tchau, tchau, tchau.

@@ -1,0 +1,91 @@
+202-Manipulando Generics Parte 3 Criando Modelo Generic
+
+Agora nós vamos ver, e utilizando o Generic, o que que muda aqui. Vamos abrir um novo arquivo.
+
+Abrimos aqui do lado. E agora nós vamos fazer a implementação utilizando Generic. Vamos esticar
+
+um pouquinho essa tela aqui, que essa classe fica um pouquinho mais cheia. E vamos dar sequência
+
+com a primeira coisa. Vou criar uma classe Caixa Genérica. E aí coloco ali menor t maior. Fazendo
+
+uma caixinha genérica agora. Vou definir uma variável membro como coisa na caixa, t.coisa
+
+na caixa. E agora vou colocar aqui o método guardar. Recebe um t, ou seja, um tipo genérico,
+
+chamado coisa, e ele vai inicializar minha variável membro, t.coisa na caixa, igual a
+
+coisa. Vamos fechar isso aqui e vamos fazer o próximo método. O próximo método é o public
+
+t pegar. Ele retorna um tipo coisa, ou seja, uma coisa na caixa que é genérica. Abriu aqui, vamos
+
+colocar aqui, return coisa na caixa. Muito bem. Vamos fechar aqui e fazer o próximo método, que
+
+é o método principal. public static void main. Vamos colocar agora aqui um comentário, criando
+
+uma caixa para guardar carrinhos. Vamos criar, vamos pegar uma caixa, o caixa genérica, né? Nossa
+
+classe aqui. E o que que essa caixinha vai ser? Vai ser para guardar o que? Carrinhos. Caixa de
+
+carrinhos. É assim. Meu caixa genérica, uso generics aqui, na hora de criar, tá? Não pode
+
+esquecer, senão você vai ter problemas aí. E vamos pegar caixa de carrinhos, ponto, guardar, vou criar
+
+um objeto, new carrinhos, vou colocar um carrinho lá chamado Hot Wheels. Vamos continuar agora, vou criar uma
+
+caixa para guardar bonecas. Então, vou usar a minha caixa genérica, utiliza generics, e aqui vou
+
+colocar bonecas, uma caixinha de bonecas. Caixa de bonecas. Aí, aqui eu vou colocar caixa genérica,
+
+muito bem. Caixinha de boneca criada. E agora? Caixa de bonecas, ponto, guardar. Vou guardar uma bonequinha
+
+aqui, new boneca, guardar uma Barbie. Fecha ali, construtor, ponto e vírgula, cuidado com a sintaxe.
+
+Nossas classes, conforme vai passando o curso, estão ficando um pouco maiores, né? E agora, eu vou colocar um
+
+aviso aqui, ó, não precisamos fazer um cast. Por quê? Pois o método pegar retorna um carrinho
+
+e uma boneca, respectivamente. Então, vamos lá? Vamos colocar aqui, ó, carrinho, vou dar o identificador
+
+de carrinho, igual, a caixa de carrinhos, ponto, pegar. Aí, volta um carrinho, tá vendo? Não precisei fazer o cast.
+
+Agora, vamos pegar, fazer uma boneca aqui, uma boneca, e vamos pegar uma boneca na caixa de bonecas, ponto, pegar.
+
+Não precisei fazer o cast, não precisei usar o instance off, tá vendo? E aí, eu vou imprimir. System.out.println,
+
+carrinho, ponto, get modelo, chamei certinho o método. Agora, vamos imprimir aqui, ó,
+
+system.out.println, boneca, ponto, get nome.
+
+Vamos fechar o método main e a classe. Pronto. Agora, vamos salvar isso aqui, né? Você vê que eu não usei, eu não usei
+
+instance off, não precisei fazer aquele monte de cast, o código ficou mais conciso, né? Ficou mais fácil de escrever.
+
+Porque eu não achei tão fácil. Ah, isso é questão de treino, né? Um bom tempo, você vai treinar e
+
+você vai ver um código bem conciso mesmo.
+
+Então, vamos salvar isso aqui? Vamos salvar a nossa caixa genérica. Vamos salvar, vamos colocar na
+
+nossa pasta lá, ponto, java.
+
+Pronto. E vamos aqui limpar o nosso terminal e vamos fazer a compilação da nossa caixa genérica,
+
+ponto, java. Compilou normalmente, agora vamos executar.
+
+Prontinho, ali está meu Hotwheel e a Barbie, a bonequinha Barbie. Veja como nós simplificamos bem o
+
+nosso código com o uso do genérica.
+
+Aqui nós fizemos uma classe genérica e aqui ao lado uma implementação com o object. E precisou fazer
+
+ali um instance off para dar uma garantia.
+
+Poderíamos ter tirado? Poderíamos ter tirado, mas se você fizer uma implementação, a garantia que
+
+você tem é a utilização deste operador instance off aqui.
+
+Então, precisamos usar o instance off, aqui nós precisamos também fazer um casting para depois chamar e aqui não.
+
+Uma caixa genérica pode ser usada de muitas outras formas e o nível de reutilização é muito grande também.
+
+

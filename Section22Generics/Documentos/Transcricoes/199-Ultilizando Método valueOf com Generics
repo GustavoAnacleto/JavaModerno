@@ -1,0 +1,35 @@
+199-Ultilizando Método valueOf com Generics
+
+Agora vamos consertar o código, né?
+
+Nós utilizamos um item deprecated, que foi o construtor na classe Integer.
+
+Temos.
+
+Recebemos esse alerta aqui só para deixar o nosso código 100%.
+
+Basta substituir aqui o uso do construtor por um método static chamado value off.
+
+Significa que nós não vamos criar este objeto.
+
+Vamos apagar aqui.
+
+Vou colocar aqui Integer Ponto é o nome do método.
+
+O nome do método é velho.
+
+OFF Passando o item três aqui ele vai me retornar um objeto do tipo Integer preenchido com três.
+
+Vamos ver isso.
+
+Vamos salvar este código aqui.
+
+Nós vamos limpar essa tela.
+
+Vamos compilar novamente o nosso código.
+
+Não tivemos nenhum problema de compilação.
+
+Lá se foi o alerta, né?
+
+O nosso código está perfeito.

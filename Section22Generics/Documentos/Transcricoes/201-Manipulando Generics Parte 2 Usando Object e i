@@ -1,0 +1,353 @@
+201-Manipulando Generics Parte 2 Usando Object e instanceOf
+
+Agora eu vou colocar essa tela para cá do nosso código.
+
+Deixa eu dar uma melhoradinha aqui.
+
+Vamos puxar aqui e puxar aqui só para o nosso código ficar um pouquinho mais organizado que eu quero
+
+colocar o terminal aqui embaixo.
+
+Muito bem.
+
+Dá para ver a classe todinha aqui, tá?
+
+Agora nós vamos abrir um outro arquivo.
+
+Abri um outro arquivo e vou colocar aqui do lado para a gente conseguir utilizar aí essa classe Brinquedo
+
+melhor.
+
+Agora eu vou fazer a implementação de como ficaria sem utilizar o Generic.
+
+Agora eu vou fazer a caixa de brinquedo.
+
+Vou fazer uma classe chamada Caixa de Brinquedo, mas perceba que eu não vou colocar o genérico vez
+
+que eu não coloquei.
+
+Veja que eu não coloquei aqui o símbolo, né?
+
+O maior e menor aqui.
+
+Eu não coloquei os dois.
+
+Vou tentar fazer isso aqui.
+
+Vou fazer isso aqui sem a utilização do genérico.
+
+Vamos.
+
+Caixa de brinquedo.
+
+Vamos definir aí uma variável membro do tipo Object, chamado coisa na caixa.
+
+Vamos definir aí o método guardar.
+
+Ele vai receber um Object.
+
+Coisa.
+
+Muito bem.
+
+Aí eu vou colocar aqui na variável membro o que eu recebi aqui, que é a coisa.
+
+Então a coisa vai para a variável membro.
+
+Muito bem, vamos fechar esse método.
+
+E agora eu vou fazer um método pegar Public Object, pegar ele retorna um objeto, um object.
+
+Porque veja que eu comecei a utilizar o Object aqui ó, tá vendo?
+
+Para eu conseguir implementar algo parecido com generics.
+
+E como eu fazia antes, eu uso Object.
+
+Tanto é que antigamente não tinha generics.
+
+Ele apareceu, o generics apareceu no Java cinco, então foram muitos anos que era assim a implementação.
+
+Tá, então vamos ver.
+
+Vamos dar aqui um return coisa na caixa, porque ela é do tipo Object.
+
+Tá certinho aqui.
+
+Vamos continuar fechando aqui.
+
+E agora eu vou colocar o método main para que possamos fazer aqui a implementação do nosso generics.
+
+Primeira coisa vamos criar uma caixa para guardar os carrinhos.
+
+Olha só como era feito antes, né?
+
+Para a gente ver bem, para que que utiliza, né?
+
+Qual é a vantagem?
+
+Vamos lá criando uma caixa para guardar carrinhos.
+
+Eu colocarei aqui caixa de brinquedos, certo?
+
+Um objeto desse tipo aqui, ó.
+
+Tá vendo a caixa de brinquedos?
+
+Aí eu coloco aqui Caixa de carrinhos new caixa de brinquedos.
+
+Agora, o que eu vou fazer aqui?
+
+Caixa de carrinhos Guardar.
+
+E eu vou guardar uma instância da classe.
+
+Carrinho Eu posso fazer dessa forma meu carrinho e vou preencher o construtor.
+
+Criei um carrinho, tá?
+
+Criei um carrinho que agora não declarei.
+
+A variável igual fiz aqui em cima, tá?
+
+Para que vocês já possam ir se acostumando, criei um carrinho chamado Hot Wheels e joguei ele dentro
+
+de guardar.
+
+Tá vendo só o professor?
+
+Mas ali é Object.
+
+Você deu new carrinho assim.
+
+Polimorfismo, lembra?
+
+Se precisar, volta na aula de polimorfismo.
+
+Muito bem.
+
+Vamos continuar aqui.
+
+Aí eu tenho aqui agora a criação de um novo objeto.
+
+Vou criar uma caixa para guardar bonecas.
+
+Vamos lá.
+
+Caixa de E brinquedos.
+
+Aí eu vou colocar aqui uma caixa de bonecas igual a New.
+
+Caixa de brinquedos.
+
+Agora uma caixinha para guardar as bonecas.
+
+Vamos lá.
+
+Caixa de bonecas.
+
+Pronto.
+
+Guardar.
+
+E agora vou fazer da mesma forma com que eu fiz aqui em cima.
+
+Tá vendo?
+
+Já vou criar direto aqui a bonequinha.
+
+New Boneca.
+
+E eu vou criar a boneca Barbie.
+
+Tá vendo?
+
+Ponto e vírgula aqui.
+
+Eu fiz dessa forma.
+
+Tá vendo?
+
+Eu declarei.
+
+Tá vendo essa linha aqui, ó?
+
+Eu declarei ser de carrinho e criei o carrinho Boneca B.
+
+Criei a boneca aqui.
+
+Eu já fiz direto o objeto.
+
+Tá vendo?
+
+Da mesma forma, eu fiz a boneca.
+
+Vamos em frente, então.
+
+Agora, uma coisa que eu não preciso no generics, mais neste caso eu vou precisar e você tem que ficar
+
+bem atento, porque esse código existe muito.
+
+O Java é uma linguagem que ela é absurdamente utilizada no mundo inteiro.
+
+Então você vai pegar código com isso aqui.
+
+Se precisar, você pode fazer uma refatoração, ou seja, implementar generics dependendo da versão
+
+do Java que você tiver.
+
+Mas isso aqui é só do Java cinco.
+
+A gente tá falando aqui do Java 22.
+
+Sim, mas cada empresa tem um Java adotado.
+
+Nem todo mundo tá na última versão, então você vai analisar se der para colocar o generics.
+
+A empresa que eu tô trabalhando é o Java oito.
+
+Existe muita empresas trabalhando ainda no Java oito, mas muitas mesmo.
+
+Então você já consegue colocar o generics.
+
+Então vamos lá.
+
+Então, eu preciso aqui nesse caso, verificar o tipo do objeto antes de fazer o cast.
+
+O cast.
+
+Por quê?
+
+Para dar segurança.
+
+Porque se fizer um cast, se você chamar um método, por exemplo, veja que o método vamos olhar aqui
+
+do lado modelo, ele só existe na classe Carrinho, se você chamar o método modelo para boneca vai dar
+
+um erro, porque no na classe boneca só tem o método get nome.
+
+Tá vendo?
+
+Então vamos lá.
+
+Então, precisamos fazer a verificação com o instanceof que nós aprendemos recentemente.
+
+Então, carrinhos pegar instanceof carrinho.
+
+Eu pergunto se o que está na caixa de carrinho realmente é um carrinho, se é um new carrinho?
+
+Eu posso pensar assim Eu peguei um carrinho, certo?
+
+Eu sei que é uma caixa de carrinho, mas pode ter algum erro no código.
+
+Então isso aqui é uma verificação de segurança.
+
+Nem sempre vai estar um nomezinho bonitinho desse jeito.
+
+Vai estar obj Aqui, por exemplo, de objeto.
+
+E aí você vai ter que aplicar o instanceof para saber o que que é este objeto.
+
+Então, na caixa de carrinho, vamos pegar.
+
+instanceOf Carrinho.
+
+Maravilha?
+
+Se é, olha, eu quero saber o que eu peguei nessa caixinha aqui, se ele é um carrinho mesmo, tá?
+
+Se for, se isso aí for verdadeiro, aí que que eu faço?
+
+Carrinho?
+
+Igual.
+
+Carrinho.
+
+Fazer mais descritivo aqui dá.
+
+Dá para encurtar isso aqui, mas eu não vou encurtar para facilitar o carrinho.
+
+Vou fazer um test carrinho pegar.
+
+Então peguei o carrinho e converti ele.
+
+Por quê?
+
+Porque ele foi guardado na forma de objeto.
+
+Tá vendo da classe Pai?
+
+Eu preciso transformar ele num carrinho mesmo.
+
+Lembrando que o Object é, por default a classe pai de carrinho, a classe pai de todos, né?
+
+Então converti ele no carrinho e agora sim eu consigo fazer aqui a impressão.
+
+System.out.println.
+
+Carrinho, ponto, get modelo e pronto.
+
+Isso aqui vai imprimir HotWheels.
+
+Continuando aqui embaixo, vamos fazer o seguinte agora eu preciso pegar fazer isso, a caixa de bonecas
+
+pegar.
+
+Peguei uma boneca na caixa.
+
+E realmente, uma boneca é instância de boneca.
+
+É instanceof boneca?
+
+Se for, aí eu vou pegar e vou.
+
+Eu vou fazer a conversão dele na boneca igual a boneca, o casting, né?
+
+Pego esse objeto e e converto ele num objeto boneca.
+
+Tá vendo?
+
+Peguei aqui Por que, professor, lembra?
+
+Tá o objeto lá dentro.
+
+Ele é um tipo objeto.
+
+Certo.
+
+Ele foi declarado como object Converter ele numa boneca e pronto.
+
+Vamos lá, Agora eu venho e consigo imprimir.
+
+A boneca.
+
+Get nome Ele vai imprimir.
+
+a Barbie, fechei o if.
+
+Fechei o método main e fechei a classe.
+
+Agora vamos salvar aqui a nossa caixa de brinquedo.
+
+Dá um control C aqui Control S para salvar o Java.
+
+Vamos salvar isso aqui.
+
+Salvamos.
+
+Agora vamos ver se isso está funcionando, né?
+
+Deixa eu limpar isso aqui.
+
+CLS E eu quero fazer o quê?
+
+Compilação de Java C Caixa de brinquedos Java compilou normalmente.
+
+Agora eu vou executar muito bem o HotWheels e Barbie.
+
+Tá vendo como eu fazia uma caixa antigamente?
+
+Se eu chamar um método errado, eu vou ter problema.
+
+Essa é a forma correta de se implementar se você não estiver utilizando generic.

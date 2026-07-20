@@ -1,0 +1,165 @@
+197-Introdução a Generics
+
+Generics Quando um programador iniciante em Java pega
+
+um código e olha os generics, vai achar que é um pouco complexo, que é um pouco confuso
+
+e tudo mais, pode se assustar com aquele código.
+
+Mas se você compreender o conceito, você passa a gostar dos generics, porque ele ajuda
+
+o seu código a ter mais precisão, ele ajuda a evitar problemas, erros.
+
+Generics em Java é como se você tivesse uma caixa onde você pode colocar coisas dentro,
+
+mas você decide que tipo de coisas você pode colocar nessa caixa.
+
+Vamos fazer o seguinte, imagine que você tem uma caixa onde você pode guardar qualquer
+
+coisa, livro, bola, telefone, etc.
+
+Antes dos generics você poderia criar uma caixa sim, mas quando pegasse algo de volta
+
+você não saberia que tipo de objeto era, se era um livro, se era uma bola, se era
+
+um telefone, etc.
+
+Você teria que verificar manualmente.
+
+Agora, imagina que você tem uma caixa especial, onde você só pode guardar livros.
+
+Quando você pega algo de volta, você sabe que é um livro, você não precisa verificar mais.
+
+E isso é basicamente o que os generics em Java fazem, eles permitem que você crie
+
+caixas, ou seja, classes, listas, conjuntos, etc, que só aceitam um tipo de objeto.
+
+Isso torna o seu código mais seguro e mais fácil de utilizar, porque você sabe que
+
+tipo de objeto está lidando, não há confusão sobre o que poderia estar nessa caixa.
+
+Isso é basicamente o que o generics em Java faz.
+
+Ele permite que você crie uma caixa, ou em termos de programação, uma classe, uma interface
+
+ou método, e decida que tipo de coisas você coloca nessa caixa.
+
+Além disso, ele te ajuda em situações de polimorfismo, onde você nem precisaria fazer
+
+aquelas conversões, porque ele vai facilitar alguns casos também.
+
+Para entender isso, nós vamos definir uma classe genérica. Então vamos lá.
+
+Vou colocar aqui public class e coloco caixa.
+
+E aí eu vou colocar o símbolo menor, uma letra e maior.
+
+Com isso, nós temos a definição de um tipo genérico.
+
+Eu vou ter uma caixa de qualquer coisa.
+
+A letra T desse exemplo é usada como um marcador de posição para representar o tipo de dado
+
+que você deseja utilizar na classe genérica.
+
+Na verdade, não precisa ser necessariamente a letra T, você pode usar qualquer letra,
+
+qualquer palavra.
+
+A escolha do T é uma convenção comum, porque T significa type, é tipo em inglês.
+
+Então vamos continuar.
+
+Vou fazer uma variável membro aqui, uma variável membro T, coisa na caixa.
+
+Agora vou colocar um método aqui, public void guardar T coisa.
+
+E aqui eu vou colocar, diz ponto coisa na caixa, recebe coisa.
+
+Estou guardando alguma coisa na caixa, mas a pessoa coisa ficou estranho, é exatamente
+
+isso, é qualquer objeto você pode colocar aqui nessa caixa, como nós vamos ver, tá?
+
+Vamos continuar aí.
+
+Guardar, ele tem que receber esse tipo, o tipo T, que é um tipo genérico, que eu defini
+
+aqui em cima, aqui, e passar para esse tipo T aqui também, que é uma variável membro.
+
+Vamos em frente.
+
+Public T pegar, esse método ele vai retornar, return coisa na caixa.
+
+Vamos fechar aqui e vamos colocar o nosso método main, para testar e entender melhor
+
+o que está acontecendo.
+
+Public static void main, vamos colocar nosso querido método main, e agora, criando, um
+
+comentário aqui, criando uma caixa para guardar strings, por exemplo, para guardar palavras.
+
+Aí, como que eu faço isso?
+
+Eu vou definir caixa e o tipo da caixa, o que é que eu quero colocar nessa caixa?
+
+É como se você estivesse preenchendo esse T, é como se ele fosse uma variável, não
+
+é uma variável, pelo amor de Deus, é um tipo T, um tipo genérico.
+
+É como se você estivesse preenchendo o tipo aqui, mais ou menos isso.
+
+Podemos pensar dessa forma para entender.
+
+É uma caixa de strings, é assim que nós fazemos, caixa e string, olha o símbolo isso aqui.
+
+Então, você pegou essa caixa e transformou ela numa caixa de strings aqui.
+
+Aí, eu vou colocar caixa de texto, igual a new caixa, e aí vem o símbolo aqui do
+
+generics também, menor e maior, e cria o objeto normalmente.
+
+Então, você vai colocar ainda os parênteses, mas antes você coloca o símbolo de generics aqui.
+
+Continuando, agora nós fazemos aqui, caixa de texto ponto guardar, o que eu tenho que guardar aqui?
+
+String, é uma caixinha para guardar string, vamos lá.
+
+Guardar oi, mundo.
+
+Aí, vamos para a próxima linha aqui, e eu vou fazer o seguinte, string texto igual
+
+a caixa de texto ponto pegar, eu vou pegar o que eu coloquei lá dentro da caixa, coloquei
+
+essa string aqui, escrito oi, mundo, então, ele vai pegar e jogar aqui dentro, ele vai
+
+utilizar este método aqui, pegar e retornar. Continuando.
+
+System.out.println e vou imprimir o texto que eu peguei.
+
+Imprime oi, mundo.
+
+Agora, só preciso salvar isso aqui e fazer os testes.
+
+Vamos salvar isso aqui como caixa, vamos lá, nossa classe pública, né?
+
+Vamos salvar isso aqui como caixa ponto java.
+
+Vamos abrir o nosso terminal, vamos fazer essa compilação aí, é javac caixa ponto java.
+
+Vamos fazer essa compilação, compilou normalmente e vamos fazer a execução. Oi, mundo.
+
+Então, é dessa forma que nós implementamos o tipo genérico.
+
+Veja que eu tenho uma caixa genérica, então, eu posso implementar outras coisas nessa caixa.
+
+Aqui, eu guardei texto, correto?
+
+Na próxima aula, nós vamos utilizar este código aqui para fazer uma caixinha para
+
+guardar números.
+
+Aqui, nós guardamos texto e número, nós vamos usar a mesma classe, vamos fazer uma
+
+reutilização desse código sem mexer, eu posso colocar qualquer coisa nessa caixa.
+
+Então, acompanhe a próxima aula que ela é muito importante. Até já.

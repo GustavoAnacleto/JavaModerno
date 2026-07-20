@@ -1,0 +1,201 @@
+198-Aplicando Generics
+
+Assim como nós fizemos uma caixinha para guardar texto, nós podemos fazer uma caixinha para guardar
+
+números.
+
+Vamos lá.
+
+Nós fizemos aqui na caixinha de texto.
+
+E aqui nessa linha, nós guardamos o texto correto.
+
+Criamos a caixinha aqui para guardar texto.
+
+Aqui nós guardamos o texto.
+
+E aqui eu peguei o texto de volta.
+
+Voltar aqui.
+
+E na linha de baixo eu imprimi o texto.
+
+Agora, e se eu quiser fazer uma caixinha de números, por exemplo?
+
+Vamos pegar aqui essa linha.
+
+Vamos colocar aqui embaixo.
+
+Então, agora não é mais uma caixa de texto.
+
+Eu quero criar uma caixa de números aqui.
+
+Vamos acertar isso aqui.
+
+A convenção de números está aqui.
+
+Aí, o que que eu preciso?
+
+Toda a classe em Java que tem um primitivo, por exemplo, você tem lá o primitivo int.
+
+Ela tem um correspondente em objeto, que é a classe Integer.
+
+O mesmo eu tenho para Long.
+
+Eu tenho uma um tipo primitivo long que nós estudamos lá, e eu vou ter aqui um tipo que seja equivalente
+
+mais em objeto.
+
+Eu tenho uma classe chamado Long para operações nesse tipo de objeto, e eu tenho o mesmo para Byte.
+
+E assim por diante.
+
+Eu tenho lá o tipo primitivo byte.
+
+Aí eu tenho uma, um equivalente em objeto para baixa seria a classe Byte em maiúsculo, ok?
+
+Aqui eu vou utilizar uma caixinha para números e vai ser de Integer a professor.
+
+Por que você não coloca aí o primitivo?
+
+Porque não pode.
+
+Isso aqui é operação com objetos, então tipo primitivo não pode.
+
+Por isso que nós estamos utilizando o equivalente em objeto, ou seja, a classe Integer.
+
+Está vendo só agora eu fiz uma caixinha onde eu só posso guardar números?
+
+Deixa eu apagar isso aqui.
+
+Tá vendo?
+
+Agora é uma caixinha apenas para número.
+
+Vou colocar aqui o caixa para números.
+
+E a de cima era para guardar strings.
+
+Tá vendo?
+
+Para guardar texto, strings, Agora números.
+
+Então ele vai fazer dessa forma.
+
+Veja que interessante eu vou conseguir utilizar a mesma classe.
+
+A reutilização da programação orientada a objeto.
+
+Batendo forte aqui de novo.
+
+Então, da mesma forma que eu guardei strings, eu vou guardar um número aqui.
+
+Vamos fazer o seguinte vamos fazer Integer.
+
+Vamos colocar aqui número igual a New Integer.
+
+E assim que eu que eu consigo criar um tipo objeto.
+
+E aí eu passo aqui o meu inteiro aqui dentro do construtor para a classe Integer.
+
+Tá vendo?
+
+Criei um número inteiro.
+
+Agora eu posso fazer da mesma forma aqui, ó.
+
+Da mesma forma que eu guardei o texto na caixa de texto.
+
+Agora eu vou guardar o número na caixa de número.
+
+Então eu vou digitar aqui caixa de números, ponto, guardar e vou guardar aqui o meu objeto, o meu
+
+número, né?
+
+Tá vendo só?
+
+Vou pegar esse número e vou guardar aqui.
+
+Acessar este método aqui em cima.
+
+Tá vendo porque ele é genérico?
+
+Eu consigo passar coisas diferentes aqui para ele.
+
+Tá vendo?
+
+E agora eu posso pegar ele e colocar em outra, se eu quiser.
+
+Então eu vou colocar aqui.
+
+Valor.
+
+Valor resgatado.
+
+Igual?
+
+Ah, o Pegar o método pegar.
+
+Então eu vou usar caixa de números.
+
+Ponto.
+
+Pegar.
+
+Aí ele vai jogar o número aqui dentro.
+
+E aí eu posso fazer a impressão, né?
+
+Vou copiar aqui só para facilitar a nossa vida, né?
+
+Olha só.
+
+E aqui eu não vou imprimir o texto.
+
+Eu vou imprimir o valor resgatado.
+
+Vou salvar isso aqui.
+
+Vamos aqui no nosso terminal.
+
+Limpei o terminal.
+
+Vamos compilar esse código.
+
+E ele me deu um alerta aqui, ó.
+
+Tá vendo só?
+
+É um alerta, Não é um erro.
+
+Ele compilou.
+
+Ele falou assim Ó, que esse construtor aqui ó.
+
+Na classe Integer ele está com status de deprecated de obsolência e será removido futuramente.
+
+Ele só está avisando então.
+
+Esse tipo de operação aqui você não deve utilizar.
+
+Mas eu utilizei ele aqui apenas como forma didática para fazer o número.
+
+Eu já vou arrumar também esse alerta, tá?
+
+Então vamos lá.
+
+Agora eu vou fazer aqui a execução deste código.
+
+Muito bem.
+
+Olha, tá vendo o imundo?
+
+É o número três.
+
+Conseguimos fazer aí uma caixa de texto, colocar texto dentro.
+
+Consegui fazer uma caixa de números.
+
+Consegui colocar números dentro.
+
+Veja a reutilização que eu posso ter utilizando generics em Java.

@@ -1,0 +1,14 @@
+
+Generics Java. Generics é um conceito extremamente poderoso e ele vem para ajudar você na questão
+
+relacionada ao polimorfismo. Como nós vimos anteriormente, dependendo do erro que você
+
+provocar ao fazer um código com polimorfismo, você só vai ver esse erro quando você rodar
+
+o programa. Por quê? Você vai lá, compila o programa, ele passa. Na hora que você roda,
+
+ele dá problema. Então, com a aplicação de generics, você consegue pegar o problema
+
+em tempo de compilação. Essa é uma das vantagens principais de você utilizar generics.
+
+E os detalhes nós vamos ver agora.
