@@ -1,0 +1,64 @@
+? Entender o porque que com a aplicação de Generics posso capturar o problema em ponto de compilação e no polimorfismo o compilador compila e na hora de rodar o erro aparece?
+R: Com Object e casting, o programador afirma qual acredita ser o tipo, e o Java confirma isso durante a execução;
+Com Generics, o tipo é definido antecipadamente, permitindo que o compilador impeça usos incompatíveis.
+
+! Apos assistir aulas 196-197 
+
+? Até agora não entendi onde e porque usar Generics, preciso de exemplos práticos para entender melhor esse conceito? 
+R: muito usado em coleções e para trazer apenas o tipo que precisa e evita erros. 
+
+! arquivo Caixa.java criado
+
+? Caixa<String> caixaDeTexto = new Caixa<>(); depois de fazer isso se eu precisar fazer 
+Caixa<Double> caixaDeNumerosDecimais = new Caixa<>(); eu posso ?
+R: Sim, pode. Você pode criar quantas caixas quiser, cada uma parametrizada com um tipo diferente:
+
+? no dia a dia de um programador java profissional ele usa muito Generics de 0 a 100 quanto usa? 
+R: Generics aparece praticamente todos os dias no Java profissional, principalmente em coleções, bibliotecas, frameworks, retornos de métodos, repositórios e respostas de APIs. Criar um Generic próprio é menos frequente, mas saber ler e utilizar Generics é indispensável.
+
+! Importante saber que precisa usar as classes Object para trabalhar com os tipos Double, Integer, String e nao os tipos primitivos int.double e etc.
+
+aula 198 falou sobre como podemos reutilizar código para criar também uma caixa de números guardando Integer para o obj caixaNumeros e String para o obj CaixaDeTexto.
+
+ao compilar vimos que o new Integer(3) está em estado obsoleto e na aula 199 ele ensinou o uso de instanciof Integer.valueOf(3).
+
+resumo 01 com 196, 197, 198 e 199.
+
+aula 200: explicando que veremos dois modelos 1 com Generics e outro sem 
+ao final dessa aula foi criado:
+! arquivo Brinquedos.java
+
+
+aula 201: nessa aula criamos os arquivos  Brinquedos.java e CaixaBrinquedos.java
+
+aonde abordamos o topico a importancia de saber como funciona sem Generics afinal Generics foi criado no java 5 até entao o modo de fazer é como esta no caixa de brinquedos que eu preciso detalhar melhor 
+
+No modelo antigo java anterior ao 5, utilizava-se Object para guardar qualquer tipo de objeto. O objeto mantinha seu tipo real, mas, ao ser recuperado como Object, seus métodos específicos não ficavam acessíveis. Por isso, usava-se instanceof para verificar o tipo real e casting para tratar a referência como Carrinho, Boneca ou outro tipo específico. Um casting incorreto causava ClassCastException durante a execução.
+
+aula 202: arquivos/ CaixaGenerica.java 
+
+nessa aula o professor ensinou como usa-se Generics e disse que ficar um pouco confuso no momento é normal, e com a prática o esclarimento vem... chegamos nos exercicios mas antes vamos criar os resumos e analisar com IA oque está claro o que pode melhorar e o que é mais importante analisar 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
