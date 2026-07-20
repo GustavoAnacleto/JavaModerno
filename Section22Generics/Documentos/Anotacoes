@@ -1,7 +1,6 @@
 ? Entender o porque que com a aplicação de Generics posso capturar o problema em ponto de compilação e no polimorfismo o compilador compila e na hora de rodar o erro aparece?
 
-R: R: Com Object e casting, o programador afirma qual acredita ser o tipo real do objeto. O compilador permite o casting quando ele é possível dentro da hierarquia, mas a JVM confirma o tipo real durante a execução. Se o objeto for de outro tipo, ocorre ClassCastException.
-
+R: Com Object e casting, o programador afirma qual acredita ser o tipo real do objeto. O compilador permite o casting quando ele é possível dentro da hierarquia, mas a JVM confirma o tipo real durante a execução. Se o objeto for de outro tipo, ocorre ClassCastException.
 Com Generics, o tipo permitido é definido antecipadamente, permitindo que o compilador rejeite usos incompatíveis e reduzindo a necessidade de casting.
 
 _______________________________________________________________________________________________
@@ -65,36 +64,9 @@ ________________________________________________________________________________
 EXERCICIOS-->
 
 
-Class Peixe criei os atributos como private.
+No exercício Cesto de Peixes e Polvos, criei as classes Peixe e Polvo com atributos privados, construtores com parâmetros e getters. Depois, criei a classe genérica Cesto<T>, com um atributo conteudo do tipo T e os métodos guardar() e pegar(). Não declarei construtor em Cesto, permitindo que o Java fornecesse o construtor vazio e que o conteúdo fosse inserido posteriormente por guardar().
 
-criei os gets
-
-criei um construtor para instanciar o obj somente recebendo os parametros sem o construtor vazio acredito que o exercicio nao pede mas quero treinar isso 
-
-______________________________________________________________________________________________
-
-Class Polvo criei os atributos como private.
-
-criei os gets
-
-criei um construtor para instanciar o obj somente recebendo os parametros sem o construtor vazio acredito que o exercicio nao pede mas quero treinar isso 
-______________________________________________________________________________________________
-
-class Cesto 
-
-criei a class assim public class Cesto<T> 
-
-construto com parametro
-
-getConteudo();
-
-public void guardar(T conteudo) {
-	this.conteudo = conteudo;
-}
-
-public T pegar() {
-	return conteudo;
-}
+Na Aplicacao, criei um Cesto<Peixe> e um Cesto<Polvo>, guardei os respectivos objetos e recuperei cada um no tipo correto. Generics permitiu reutilizar a mesma classe para tipos diferentes, sem utilizar Object, instanceof ou casting manual.
 ______________________________________________________________________________________________
 
 

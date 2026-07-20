@@ -229,6 +229,50 @@ Principal aprendizado da seção: o polimorfismo permite tratar objetos de class
 
 ---
 
+### Seção 22 – Generics
+
+- Introdução ao conceito de Generics em Java.
+- Entendimento de que Generics foi introduzido no Java 5.
+- Comparação entre o modelo antigo com `Object` e o modelo com Generics.
+- Uso de `Object` para armazenar objetos de diferentes classes.
+- Necessidade de `instanceof` e casting no modelo sem Generics.
+- Risco de `ClassCastException` em conversões incompatíveis.
+- Definição de classes genéricas com `<T>`.
+- Uso de `T` como parâmetro de tipo.
+- Aplicação do tipo genérico em atributos, parâmetros e retornos de métodos.
+- Criação da classe genérica `Caixa<T>`.
+- Implementação dos métodos `guardar()` e `pegar()`.
+- Definição do tipo no momento de utilizar a classe genérica.
+- Criação de objetos como `Caixa<String>` e `Caixa<Integer>`.
+- Reutilização da mesma classe com diferentes tipos.
+- Uso do operador diamante `<>`.
+- Verificação de incompatibilidades durante a compilação.
+- Redução da necessidade de `instanceof` e casting manual.
+- Entendimento de que Generics trabalha com tipos de referência.
+- Impossibilidade de utilizar tipos primitivos diretamente como parâmetros genéricos.
+- Uso das classes wrapper `Integer`, `Double`, `Boolean` e `Character`.
+- Entendimento de que `String` já é uma classe e pode ser utilizada diretamente.
+- Identificação do construtor `new Integer()` como obsoleto.
+- Uso de `Integer.valueOf()` para obter objetos do tipo `Integer`.
+- Conceito de autoboxing entre tipos primitivos e classes wrapper.
+- Comparação prática entre caixas com `Object` e caixas genéricas.
+- Criação de classes próprias como `Carrinho` e `Boneca`.
+- Uso de `CaixaGenerica<Carrinho>` e `CaixaGenerica<Boneca>`.
+- Criação do exercício `Cesto<T>` para armazenar `Peixe` e `Polvo`.
+- Recuperação dos objetos diretamente no tipo definido pelo cesto.
+- Criação de uma caixa genérica baseada em array.
+- Uso de capacidade e índices para armazenar e recuperar elementos.
+- Entendimento da limitação de criação direta de arrays com `new T[]`.
+- Criação de array genérico por meio de `(T[]) new Object[capacidade]`.
+- Compreensão do aviso de conversão não verificada durante a compilação.
+- Uso de `Caixa<Double>` para armazenar preços.
+- Uso de `Caixa<Character>` para armazenar letras.
+- Aplicação prática de Generics com segurança de tipos, reutilização de código e redução de conversões manuais.
+
+Principal aprendizado da seção: Generics permite criar classes, interfaces e métodos reutilizáveis cujo tipo é definido no momento da utilização. Ao declarar estruturas como `Caixa<String>`, `Cesto<Peixe>` ou `Caixa<Double>`, o compilador passa a controlar quais objetos podem ser armazenados e qual tipo será devolvido. Isso reduz a necessidade de `Object`, `instanceof` e casting manual, antecipa incompatibilidades para o tempo de compilação e torna o código mais seguro, claro e reutilizável. Também ficou evidente que nem toda sintaxe pode ser deduzida apenas pela lógica: a criação de arrays genéricos possui limitações específicas da linguagem que precisam ser estudadas e compreendidas.
+
+---
+
 ---
 
 
