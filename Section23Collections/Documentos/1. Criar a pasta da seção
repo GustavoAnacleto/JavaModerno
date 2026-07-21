@@ -1,0 +1,104 @@
+1. Criar a pasta da seção
+
+Caminho:
+
+C:\Curso_Java\JavaModerno\Section23Collections
+
+2. Montar a estrutura de pastas
+
+Section23Collections/
+├── Documentos/
+│   ├── Transcricoes/
+│   ├── Resumos/
+│   └── anotacoes.txt
+├── Exercicios/
+├── Fontes/
+└── SolucoesExercicios/
+
+3. Guardar a documentação inicial do curso e fazer o primeiro commit
+
+Summary:
+chore: inicia estrutura da secao 23 sobre collections
+
+Description:
+Cria a estrutura inicial da Seção 23 e adiciona os materiais disponibilizados pelo curso.
+
+4. Gerar e armazenar as transcrições escritas das aulas
+
+As transcrições serão utilizadas posteriormente para produzir os resumos estruturados em Markdown.
+
+5. Assistir às aulas e produzir as anotações
+
+Registrar no arquivo anotacoes.txt:
+
+- conceitos principais;
+- dúvidas;
+- pontos importantes;
+- exemplos;
+- erros encontrados;
+- observações pessoais.
+
+Também armazenar em Fontes os códigos desenvolvidos acompanhando o professor.
+
+6. Esclarecer todas as dúvidas das anotações com a IA
+
+Analisar cada dúvida separadamente, melhorar o entendimento e corrigir possíveis erros técnicos antes de alterar a escrita das anotações.
+
+7. Criar os resumos em Markdown
+
+Utilizar as transcrições e as anotações revisadas para criar os arquivos dentro de:
+
+Documentos/Resumos/
+
+Depois, realizar o commit dos resumos.
+
+8. Resolver os exercícios sozinho
+
+Ler apenas os enunciados e tentar construir as soluções sem consultar antecipadamente as respostas oficiais.
+
+9. Analisar os exercícios com a IA
+
+Verificar:
+
+- atendimento ao enunciado;
+- lógica;
+- funcionamento;
+- legibilidade;
+- uso correto de Collections;
+- boas práticas;
+- possíveis correções;
+- comparação com a solução oficial.
+
+Depois, corrigir, compilar, executar e commitar os exercícios.
+
+10. Criar a imagem da seção
+
+Utilizar primeiro o prompt visual genérico padronizado e depois produzir uma versão específica para a Seção 23 — Collections.
+
+11. Criar o texto da publicação
+
+Organizar a publicação em seis partes:
+
+1. dificuldade ou experiência pessoal;
+2. principal aprendizado técnico;
+3. importância profissional;
+4. conteúdos e exercícios praticados;
+5. organização e processo de aprendizagem;
+6. conclusão, convite para interação, repositório e hashtags.
+
+12. Encerrar a seção
+
+- finalizar o arquivo anotacoes.txt;
+- atualizar o README principal;
+- conferir a estrutura e os nomes dos arquivos;
+- confirmar que os códigos foram compilados e executados;
+- realizar o commit final.
+
+Summary:
+docs: finaliza secao 23 sobre collections
+
+Description:
+Atualiza o README principal e finaliza as anotações da Seção 23.
+
+Registra os conteúdos estudados, os exercícios realizados e a documentação produzida sobre Collections em Java.
+
