@@ -31,6 +31,7 @@ R: Sim. Collections armazenam objetos, não tipos primitivos diretamente.
 
 _______________________________________________________________________________________________
 
+
 Como faço para conhecer os métodos prontos de collections, as IAs sabem todos quando eu precisar perguntar? 
 
 R: As melhores formas são:
@@ -47,12 +48,61 @@ R: Não funciona.
 O método add() normalmente adiciona somente um elemento por vez:
 _______________________________________________________________________________________________
 
+?Quando usar HashSet,ArrayList ou HashMap?
 
-**************************************EXERCICIOS***********************************************
+R:
+Quando usar cada uma?
+
+ArrayList	|uma sequência de elementos   	 |aceita repetidos e mantém ordem
+HashSet	    |elementos únicos	             |não aceita duplicados
+HashMap 	|relacionar uma chave a um valor |cada chave identifica um valor
+
+_______________________________________________________________________________________________
+?Collection vs Map, exitem outras devo focar o conhecimento apenas nessa, o porque que o pai de HashMap não é Collection e sim Map qual foi o motivo disso?
+
+R: Collection e Map fazem parte do Java Collections Framework, mas possuem funções diferentes. Collection representa grupos de elementos individuais, como List, Set e Queue. Map representa pares de chave e valor. Por isso, HashMap implementa Map e não Collection: seus dados não são armazenados como elementos isolados, mas como associações entre uma chave e um valor. Existem outras estruturas, porém, neste momento, o mais importante é entender bem ArrayList, HashSet e HashMap.
+
+******************************Anotações sobre as aulas****************************************
+
+Aula207: breve introdução.
+
+Aula208: aula apresentou conceitos e explicou que cada classe tem suas próprias especificidades, HashSet,ArrayList ou HashMap cada uma tem suas particularidades, e a interface Collections é o contrato que fornece varios métodos as essas classes podendo pensar que Collections é a interface pai de HashSet,ArrayList ou HashMap.
+
+Ao pesquisar sobre o assunto fiquei sabendo que o pai de HashMap é a Map.
+
+Gerar resumo 01 -> 207 e 208
+
+Aula209: introdução sobre Set infomando que para usa-lo preciso importar import java.util.Set ou * importa todas.
+
+Aula210: gerando o primeiro fonte para praticar conceito ExemploSet.java
+
+* HashSet não garante a ordem em que os elementos serão exibidos.
+*
+* Para manter a mesma ordem em que os elementos foram adicionados,
+* pode-se usar LinkedHashSet.
+*
+* Para manter os elementos automaticamente ordenados em ordem crescente,
+* pode-se usar TreeSet.
+*
+* Para ordem decrescente, pode-se usar TreeSet com
+* Comparator.reverseOrder().
+*
+* Resumo:
+* HashSet       -> não garante ordem;
+* LinkedHashSet -> mantém a ordem de inserção;
+* TreeSet       -> mantém os elementos ordenados.
+*
+* O código hash é usado internamente para organizar e localizar elementos,
+* mas não deve ser usado como critério de ordenação.
+
+código complementar gerado por IA: ExemploSetComplementar.java
 
 
 
-**************************************EXERCICIOS***********************************************
+**************************************EXERCICIOS**********************************************
+
+
+
 
 
 
