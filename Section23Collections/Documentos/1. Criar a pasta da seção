@@ -1,31 +1,4 @@
-1. Criar a pasta da seção
 
-Caminho:
-
-C:\Curso_Java\JavaModerno\Section23Collections
-
-2. Montar a estrutura de pastas
-
-Section23Collections/
-├── Documentos/
-│   ├── Transcricoes/
-│   ├── Resumos/
-│   └── anotacoes.txt
-├── Exercicios/
-├── Fontes/
-└── SolucoesExercicios/
-
-3. Guardar a documentação inicial do curso e fazer o primeiro commit
-
-Summary:
-chore: inicia estrutura da secao 23 sobre collections
-
-Description:
-Cria a estrutura inicial da Seção 23 e adiciona os materiais disponibilizados pelo curso.
-
-4. Gerar e armazenar as transcrições escritas das aulas
-
-As transcrições serão utilizadas posteriormente para produzir os resumos estruturados em Markdown.
 
 5. Assistir às aulas e produzir as anotações
 

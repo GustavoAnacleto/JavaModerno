@@ -1,0 +1,397 @@
+List Interface é a primeira coisa que nós podemos ver e que ela também pertence ao pacote Java útil.
+
+Ou seja, nós precisamos importar essa interface e as classes necessárias para poder usar fazer o import
+
+java util list.
+
+Assim como a classe que implementa essa interface.
+
+Uma List é uma coleção ordenada que pode conter elementos duplicados, inclusive.
+
+Veja que já temos uma grande diferença da collection anterior sete que nós estudamos.
+
+Se você tentar adicionar um elemento duplicado a uma list, o elemento será adicionado com sucesso.
+
+Isso ocorre porque uma List em Java permite elementos duplicados.
+
+Portanto, se você adicionar um elemento que já existe na List, ele será adicionado novamente.
+
+E a List.
+
+Ela conterá várias instâncias do mesmo elemento.
+
+Por exemplo, nós temos a classe ArrayList, que implementa List é uma implementação de interface list
+
+que usa um array dinâmico para armazenar os elementos.
+
+Ela permite duplicatas, assim como é a característica da interface e mantém a ordem de inserção dos
+
+elementos.
+
+O ArrayList é ideal quando você precisa de acesso rápido aos elementos.
+
+Aqui nós temos a nossa lista.
+
+Então fizemos a declaração Generic Strings.
+
+Significa que aqui é uma caixinha que eu só posso colocar strings igual a New ArrayList.
+
+Criamos uma instância da classe e aqui nós estamos adicionando.
+
+Adicionamos aí baseado no exemplo similar ao anterior.
+
+Adicionamos Java, adicionamos a palavrinha Python, a palavrinha C++ e jogamos tudo na tela.
+
+Veja que ela é bem similar a anterior.
+
+Então vamos fazer a implementação desse código e verificar como isso funciona na prática.
+
+Então vamos começar pelas Importações import Java culturais.
+
+Olha, mas o que que é isso, professora?
+
+Para usar um array eu não utilizo lá os colchetes e tudo mais.
+
+Sim, é exatamente tudo aquilo que a gente estudou anteriormente.
+
+Mas Java também tem uma classe Array para que você possa fazer operações com arrays.
+
+Que tipo de operações, professor?
+
+Nós vamos ver.
+
+Bom, vamos em frente.
+
+Então, estou colocando aqui uma importação explícita da classe Arrays.
+
+E agora vamos fazer a outra importação.
+
+O que nós vamos importar?
+
+Nós precisamos importar tudo o que formos usar.
+
+Tanto a interface quanto a classe.
+
+Então vamos lá.
+
+Import Java List.
+
+Import.
+
+Java.
+
+ArrayList.
+
+Muito bem.
+
+Eu vou colocar aqui para que vocês lembrem que eu posso substituir esses três imports por esse Java
+
+Multiuso Asterisco.
+
+Não importa todas as classes do pacote Java.
+
+Vamos criar uma classe chamada Exemplo List.
+
+Vamos colocar aqui o nosso método main para que possamos executar essa classe.
+
+Executar o nosso exemplo.
+
+Colocar ele aqui.
+
+E agora chegou o grande momento, né?
+
+Vamos declarar aqui o List Strings e vamos colocar lista igual a New ArrayList.
+
+Usando Generics que nós aprendemos recentemente e vamos fazer começar a utilizar ela.
+
+É muito simples de utilizar.
+
+As collections são maravilhosas.
+
+List Add Adicionamos Java.
+
+Ok.
+
+lista de vamos colocar Python, vamos adicionar o C++.
+
+Lista ponto de C++.
+
+Quero enfatizar bem a diferença entre cada uma das collections dessas principais collections, por isso
+
+que eu estou utilizando exemplos similares.
+
+Vamos lá.
+
+Aí vamos colocar aqui agora, verificando se a lista contém um elemento.
+
+Vamos colocar aqui para imprimir.
+
+Eu coloco aqui.
+
+Contem Java concatenado com lista.
+
+Contem Java.
+
+Aí isso aqui tem que retornar o verdadeiro correto, porque a lista contem Java.
+
+Agora adicionando todos os elementos de outra coleção, os elementos de outra coleção.
+
+Agora nós vamos usar o ArrayList.
+
+Olha só o que eu vou fazer, hein?
+
+O vou pegar aqui, Vou declarar o outro outra collection.
+
+Vou chamar aqui de outra lista.
+
+Olha o tipo de operação que dá para fazer igual a arrays.
+
+Ponto.
+
+List.
+
+E vou colocar aqui JavaScript.
+
+Vírgula.
+
+Ruby.
+
+Então eu estou utilizando a classe Arrays.
+
+Tem um método estático lá dentro.
+
+Tá vendo a estética?
+
+E simplesmente o que ele vai fazer é pegar essas duas strings e retornar para cá um objeto de outra
+
+List.
+
+Significa que ele vai criar uma segunda List.
+
+Um segundo objeto List Tá só com dois aqui eu criei sem nada, adicionei três aqui.
+
+O que que eu fiz?
+
+Eu declarei ele, chamei esse método e fazendo dessa forma.
+
+Ele joga para cá como se eu tivesse adicionado dois aquele Java e Python aqui.
+
+JavaScript?
+
+Ruby.
+
+Só isso.
+
+Continuando o nosso código, aí eu vou colocar list lista add ao.
+
+Olha só a utilização.
+
+Vou colocar outra lista aqui.
+
+O que que ele vai fazer?
+
+Ele vai pegar essa listinha aqui.
+
+Essa list que só tem dois elementos vai pegar tudo que está dentro dela e adicionar na lista principal
+
+que eu criei aqui em cima.
+
+Então ele vai ter esses três elementos, mais esses dois.
+
+Mas veja que são objetos diferentes.
+
+Lista é um objeto.
+
+Outra lista é outra lista.
+
+São objetos diferentes.
+
+Só que eu posso jogar todo o conteúdo de uma lista para dentro da outra.
+
+E é o que eu to fazendo aqui.
+
+Continuando.
+
+Agora vamos imprimir.
+
+Imprimir.
+
+Vamos imprimir.
+
+Vai sair Java?
+
+Python, C++, JavaScript e Ruby.
+
+Vamos colocar aqui nossa função para imprimir.
+
+Lista completa concatenado com lista.
+
+E aqui vai sair a comprovação.
+
+Ele vai sair a lista completa.
+
+E olha só a sequência.
+
+O eu tinha Java, Python e C++.
+
+Aqui o C++.
+
+Quando eu vim aqui e adicionei o conteudo da outra lista na lista principal, ele adiciona aqui o.
+
+E olha só a sequência bonitinha, diferente do que aconteceu lá no sete.
+
+Continuando, agora a gente vai fazer o seguinte removendo um elemento.
+
+Lista a nossa lista principal remove.
+
+Eu quero tirar o Python.
+
+Pronto.
+
+Maravilha!
+
+E aí, vamos fazer o seguinte vamos imprimir para ver se.
+
+Se vai sair, então essa lista tem que sair essa impressão Java, C++, JavaScript e Ruby.
+
+Vamos colocar aqui System Print Line.
+
+Quero que imprima a lista principal e um lista após a remoção.
+
+Maravilha!
+
+Removemos aqui o removemos o Python.
+
+Agora tem que sair uma lista sem o Python.
+
+Esse aqui é o que tem que sair na tela desse system print line.
+
+Continuando.
+
+Obtendo um elemento pelo índice.
+
+Como é que eu faço isso, né?
+
+Então vamos lá.
+
+Vou definir uma string aqui.
+
+Vou chamar de elemento e vou colocar lista get.
+
+Dois Qual é o elemento que está na posição dois?
+
+Vou colocar aqui.
+
+Obtém o terceiro elemento da lista.
+
+Então vamos colocar aqui o imprimir, porque ele vai pegar o terceiro elemento, porque começa no zero,
+
+né?
+
+E zero um dois e o terceiro elemento joga ele para cá.
+
+Quem será que ele tirou da lista?
+
+Então vamos imprimir para ver se tem um elemento no índice.
+
+Dois Concatenado com elemento.
+
+O que ele tirou aqui o jogou nessa variável e agora vou jogar na tela.
+
+Continuando.
+
+Vamos limpar.
+
+Limpando a lista.
+
+Lista ponto clear.
+
+Então vamos fazer a impressão para ver, né?
+
+System out Ponto print line Vamos colocar lista após limpar, baixar um pouco aqui, limpar uma, mas
+
+colocar aqui.
+
+Lista fechar Tem que vir assim o igualzinho quando limpamos o set vazio.
+
+Vamos fechar aqui o método main fechar a classe.
+
+Agora vamos executar para ver se realmente todas essas operações funcionaram, Então vou chamar isso
+
+aqui de exemplo List.
+
+Vamos copiar isso aqui e vamos salvar este arquivo como exemplo List Ponto Java.
+
+Vamos até o terminal.
+
+Vamos compilar a nossa classe Java C Exemplo List Ponto.
+
+Java.
+
+Vamos compilar.
+
+Compilação Funcionou perfeitamente.
+
+Muito bem.
+
+Agora vamos fazer a execução e verificar se realmente as saídas estão ok.
+
+Se aconteceu tudo aquilo que eu expliquei durante o código, então vamos analisar essas saídas.
+
+A primeira aqui é o Contem Java.
+
+Essa linha aqui.
+
+Correto.
+
+Verificando se tem um elemento, um determinado elemento, eu perguntei aqui.
+
+Contém Java?
+
+Sim.
+
+Então é verdadeiro.
+
+Ele jogou verdadeiro na tela.
+
+Agora, depois que que eu fiz, eu criei uma outra lista, adicionei os elementos, depois peguei a
+
+outra lista e adicionei tudo que tinha dentro dela na principal.
+
+E aí, o que que ele tem que imprimir?
+
+Exatamente isso.
+
+Funcionou.
+
+Aqui ó.
+
+A lista Completa está nessa linha aqui significa os elementos que eu adicionei, mais o da segunda lista.
+
+E olha só a sequência, ele foi mantendo a sequência de adição.
+
+Tá vendo, Ele não fez igual ao sete que deu uma bagunçada aqui.
+
+Tá, porque o sete não prioriza isso?
+
+Não importa.
+
+Isso para o sete e otimização dele é feita dessa forma.
+
+E agora aqui, após a remoção, removendo um elemento, eu removi o Python e mandei imprimir.
+
+Então tem que sair isso aqui ó na tela, correto?
+
+Tudo menos o Python e sem perder a sequência dos elementos.
+
+E aqui o índice zero seria o Java, o índice um seria o C++ e o índice dois seria o JavaScript.
+
+Está correto o que está no compilador?
+
+E aqui a lista após limpar.
+
+Fizemos a limpeza da lista.
+
+Imprimimos tudo na tela.
+
+Ou seja.

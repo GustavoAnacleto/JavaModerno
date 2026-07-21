@@ -1,0 +1,59 @@
+**************************************PERGUNTAS***********************************************
+
+?Posso dizer que as Collections veio para aposentar os Arrays ou os arrays ainda tem especificações unicas em algum contexto?
+
+R: Não. Collections não substituíram completamente os arrays. Cada estrutura possui situações em que é mais adequada.
+
+Arrays ainda são úteis quando:
+
+a quantidade de elementos é conhecida e não mudará;
+precisamos armazenar tipos primitivos diretamente, como int, double e boolean;
+queremos uma estrutura simples e com tamanho fixo;
+trabalhamos com matrizes, como int[][];
+algum método ou biblioteca exige um array.
+
+Collections são mais práticas quando:
+
+a quantidade de elementos pode aumentar ou diminuir;
+precisamos adicionar e remover objetos;
+queremos métodos prontos para manipular os dados;
+precisamos de estruturas como listas, conjuntos ou mapas.
+
+
+_______________________________________________________________________________________________
+
+! Diferentemente de um array, que normalmente possui tamanho fixo, uma Collection pode aumentar ou diminuir conforme os elementos são adicionados ou removidos.!
+
+_______________________________________________________________________________________________
+?Collections armazena apenas objetos?
+
+R: Sim. Collections armazenam objetos, não tipos primitivos diretamente.
+
+_______________________________________________________________________________________________
+
+Como faço para conhecer os métodos prontos de collections, as IAs sabem todos quando eu precisar perguntar? 
+
+R: As melhores formas são:
+* usar o preenchimento automático da IDE;
+* consultar a documentação oficial do Java;
+* observar o tipo da variável;
+* perguntar à IA quando precisar;
+* praticar os métodos mais comuns.
+_______________________________________________________________________________________________
+
+linguagens.add("Java","C","Ruby","JS"); esse comando funciona ?
+
+R: Não funciona.
+O método add() normalmente adiciona somente um elemento por vez:
+_______________________________________________________________________________________________
+
+
+**************************************EXERCICIOS***********************************************
+
+
+
+**************************************EXERCICIOS***********************************************
+
+
+
+

@@ -1,0 +1,367 @@
+E agora vamos fazer a implementação do MAP para ver como funciona isso na prática.
+
+Então vamos até o nosso código aqui e começar a digitar a nossa classe.
+
+Vamos ver na prática como funciona um objeto do tipo Map.
+
+Primeira coisa, vamos fazer as importações Java e vou colocar aqui a importação do HashMap da classe
+
+que implementa a interface map.
+
+A professora não tem que importar primeiro a MAP não.
+
+Não tem problema, a ordem não importa.
+
+Vamos colocar aqui.
+
+Import Java.
+
+Multiponto Map.
+
+Vamos criar uma classe aqui chamada public class.
+
+Exemplo Map.
+
+E agora colocar o nosso método Guerreiro aí, que está conosco desde o início do curso.
+
+Static void main.
+
+Nosso ponto de entrada do programa.
+
+E agora vamos fazer a declaração.
+
+Agora muita atenção Muda um pouquinho do set e do list que nós vimos.
+
+Vamos colocar aqui a classe A interface map ta, ela vai ser um generics, só que olha só como que ela
+
+vai fazer ela recebe um string.
+
+Olha a virgula aqui ó, presta atenção na virgula.
+
+Ou seja, aqui é minha chave e agora o valor vai ser um integer.
+
+Tá vendo só?
+
+Agora tem dois itens aqui, o String e Integer.
+
+Eu tenho que ter esses pares aqui é uma caixinha que tem a string e o valor que é o Integer.
+
+Vamos em frente.
+
+Vou dar o nome de mapa igual a New e vamos instanciar HashMap.
+
+Agora vamos colocar aqui Mapa ponto.
+
+Assim que eu coloco eu usava o Edge né?
+
+Anteriormente, agora estou usando PUT.
+
+Vamos colocar aqui Java ok?
+
+A minha chave qual que é o valor 20?
+
+Tá, é assim que eu faço para adicionar elementos aqui adicionando No elementos, vamos adicionar mais
+
+elementos a um mapa.
+
+Vamos colocar aqui Python.
+
+E qual que é o valor?
+
+Dez.
+
+Vamos colocar aqui.
+
+Map put.
+
+Vamos colocar C++ e um valor para ele.
+
+15.
+
+Adicionei.
+
+Agora vou colocar um comentário aqui o para verificar se o mapa contém uma chave.
+
+Verificando se o mapa contém uma chave.
+
+Vamos colocar aqui o método para imprimir, né?
+
+Vamos chamar o método para imprimir.
+
+Contém Java.
+
+Fecha.
+
+Vamos concatenar aqui como map.
+
+Mapa contains aqui.
+
+Tá vendo como muda um pouquinho o nome dos métodos content que o outro usava?
+
+Só contains, né?
+
+Contém aqui.
+
+Aí eu pergunto Java tem essa chave?
+
+Isso aqui tem que retornar um verdadeiro porque contém, né?
+
+Ou é a primeira que eu coloquei aqui?
+
+Tá vendo?
+
+Então vamos ver se agora a gente vai fazer o seguinte vou colocar aqui o Obtendo o valor associada a
+
+uma chave.
+
+Então, como que eu faço isso?
+
+Vamos colocar um método para imprimir aqui e vou colocar valor associado a Java.
+
+Mapa Ponto.
+
+Get Java.
+
+O que é que tem que imprimir aqui?
+
+Qual que é o valor associado a Java?
+
+É o 20?
+
+O Tá vendo?
+
+Então vamos lá.
+
+20.
+
+Agora eu vou colocar aqui o mapa JavaScript e coloco aqui o chave valor.
+
+Coloquei um valor para ele.
+
+25.
+
+Poderia ser um código, por exemplo, né?
+
+Aqui seria adicionando mais elementos.
+
+Muda um pouquinho a dinâmica, né?
+
+Das Collections que nós vimos anteriormente mapa Ruby e código cinco.
+
+E vamos colocar aqui o imprimir.
+
+Imprime sem ordem, tá?
+
+Porque ela não é ordenada?
+
+A gente já viu isso aí.
+
+Vamos colocar aqui o Java 20.
+
+Para imprimir Python dez, Plus 15, JavaScript 25 e Ruby cinco.
+
+Agora vamos colocar aqui o método para imprimir o mapa completo.
+
+É só jogar o mapa dessa forma o objeto inteirinho ali tá?
+
+Eu vou fazer uma remoção agora.
+
+Mapa Remove.
+
+Payton removendo um elemento.
+
+O elemento Payton agora é só um.
+
+Só um detalhe.
+
+Tá pessoal, eu coloquei aqui o Mas isso não é garantia que vai ser impresso.
+
+Isso tá lá no terminal, tá?
+
+Porque ele vai imprimir sem ordem, tá?
+
+Então ele pode dez alunos colocarem uma série de fatores sobre o algoritmo.
+
+É complexo a motivação disso aqui.
+
+Tá bom para explicar, é bem profundo.
+
+Então, só para dizer para vocês que pode ser que não saia nessa lista, é bem provável que nem saia
+
+nessa sequência aqui.
+
+Tá bom, pode vir o Python primeiro ou Java ali por último, etc.
+
+Tá, vamos voltar aqui.
+
+Tô removendo o Python da lista.
+
+Vamos lá.
+
+E vamos aqui imprimir em Java.
+
+Agora eu vou tirar um dos elementos aqui ó.
+
+Ele vai ter que imprimir esses elementos, não necessariamente nessa ordem, tá?
+
+Colocar aqui o método para imprimir.
+
+Mapa após remoção do elemento após remoção.
+
+Mapa Mapa e agora Mapa Java 30.
+
+Atualizando o valor associado a uma chave.
+
+Então vamos fazer o seguinte Vamos colocar aqui como vai ficar assim Impressão Colocar o método de imprimir
+
+embaixo.
+
+E veja que agora o Java, olha só o Java é 30, Tá vendo?
+
+O Java aqui ó.
+
+Vou colocar o método de imprimir para a gente ver, né?
+
+Depois que eu atualizei o valor, como é que vai ficar?
+
+Eu coloquei esse comentário aí, mas lembrando, pode não ser nessa sequência.
+
+Mas o que?
+
+O que não pode?
+
+A sequência pode estar diferente, mas ele vai estar sempre certinho.
+
+Java igual a 30 ser igual a 15.
+
+JavaScript 25.
+
+Ruby cinco TA.
+
+E os valores não vão mudar.
+
+Mapa após atualização Vamos colocar aqui Mapa Agora Mapa, ponto clear.
+
+Vamos limpar tudo isso limpando o mapa.
+
+Então vamos fazer a última impressão, né?
+
+Vou chamar o print aqui e vou colocar mapa após limpeza, após limpar.
+
+E aí eu vou ter um mapa vazio, correto?
+
+Comentário aqui Vamos fechar, vamos fechar esse método aqui e vamos fechar aqui embaixo.
+
+Só lembrando que essa linha aqui ela ressalta algo que já foi explicado, mas eu quero reforçar você
+
+só tem uma chave, ok?
+
+Uma chave.
+
+Você não pode repetir a chave.
+
+Todo mundo pode ser 30.
+
+Eu posso ter o Java 30, Python 30.
+
+Todo mundo pode ter o mesmo valor, mas a chave não pode.
+
+Vamos compilar isso aqui e ver isso tudo acontecendo na prática.
+
+Então vamos salvar o nosso arquivo.
+
+Vou dar o nome aqui de exemplo map.
+
+Vou copiar aqui.
+
+Dá um control S e vai abrir aqui para mim.
+
+Vou colar e vou colocar Java.
+
+Então exemplo map Java está salvo.
+
+Agora vamos fazer o seguinte vamos para o nosso terminal e fazer esses testes aqui.
+
+Primeira coisa a compilação Java C.
+
+Exemplo Map Java.
+
+Vamos compilar?
+
+Ok, Compilou.
+
+Muito bem.
+
+Agora vamos fazer execução.
+
+Executando.
+
+E aí está.
+
+Agora vamos conferir aqui para ver se está tudo correto, né?
+
+Contém Java?
+
+Então é essa linha aqui perguntando se contém Java.
+
+Tá.
+
+Olha só método tá perguntando se contém Java e essa linha executou corretamente o true.
+
+Agora a próxima aqui o valor associado a.
+
+Valor associado a Java é quanto nesse momento 20 O correto.
+
+Essa linha aqui funciona muito bem agora aqui.
+
+Mapa completo.
+
+Fizemos a impressão do mapa completo aqui.
+
+E olha só ele Não, ele não pegou a ordem.
+
+O Java ou C++ tá aqui, ó.
+
+Tá tudo fora de ordem.
+
+Normal Isso aqui tá?
+
+Conforme conforme foi explicado, isso é normal.
+
+Então o mapa completo ele colocou tudo.
+
+Então tem Java ótimo, tem Java, tem Python, tem C++, tem JavaScript, tem Ruby.
+
+Todo mundo tá aqui agora.
+
+Após remoção.
+
+Então, quem que eu removi?
+
+Aqui eu removi o Python da lista, então nessa lista aqui o após remoção não pode aparecer.
+
+O Python funcionou corretamente.
+
+Agora na linha de baixo aqui após a atualização, olha só que interessante.
+
+Tá vendo?
+
+Se eu colocar o mesmo nome de chave lá, como se eu fosse adicionar ele, vai ver que já existe, tá?
+
+Ele falou Já tem Java no mapa, no no mapa, então o que que eu vou fazer?
+
+Vou só atualizar a chave e assim que eu atualizo é mapa.
+
+Após limpar aqui eu limpei né?
+
+Onde tá aqui o Clear?
+
+Limpei o mapa, então ele imprimiu vazio.
+
+É assim que nós utilizamos um map.
+
+Você tem diversas classes, né?
+
+O framework Java Collection é extenso mesmo, mas entendendo esses conceitos que foram passados, você
+
+vai navegar tranquilamente por qualquer outra collection ou interfaces map.

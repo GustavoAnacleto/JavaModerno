@@ -1,0 +1,59 @@
+Sete Interface sete fica dentro de um pacote Java.
+
+Ele está dentro do pacote Java.
+
+Util significa que se eu for utilizar, eu preciso fazer a importação.
+
+Import Java sete ou colocando asterisco java util ponto sete ponto asterisco, como nós fizemos lá no
+
+capítulo de packages de pacotes.
+
+Sete é uma coleção que não permite elementos duplicados.
+
+Portanto, se você tentar adicionar um elemento que já existe em um set em uma coleção.
+
+Sete essa operação de adição falhará silenciosamente.
+
+O set não será modificado.
+
+Nós temos como exemplo o set, que é uma classe dentro do Java que implementa essa interface.
+
+Implementa a interface SET, que é uma coleção que não permite elementos duplicados e não garante a
+
+ordem dos elementos.
+
+O hash set é uma boa escolha quando você precisa de operações rápidas de adição, remoção e verificação
+
+da existência de um elemento.
+
+E aqui nós temos uma coleção sendo criada um conjunto.
+
+A gente pode chamar de conjunto também.
+
+Veja bem, nós fazemos a declaração aqui do set.
+
+Estamos usando generics aqui, que estudamos recentemente.
+
+Declarei Criei um New set Que que eu vou colocar dentro desse conjunto dessa collection?
+
+Vou colocar strings simplesmente.
+
+Desta forma eu vou adicionando o conjunto ponto a ADD.
+
+Estou colocando uma string ali.
+
+Java conjunto Add Python conjunto ponto add e colocando o C++, o C++.
+
+São três linguagens incríveis de programação, né?
+
+E aqui eu imprimo o conjunto todo dessa forma.
+
+Basta pegar e jogar que ele vai imprimir na tela.
+
+Para que possamos entender ainda melhor o funcionamento dessa interface desse tipo de collection.
+
+A collection do tipo set.
+
+Nós vamos fazer um código aqui do lado, então vamos até ele para aprender de vez como funciona esse
+
+tal de set.

@@ -1,0 +1,185 @@
+Então, vamos dar vida a essa interface para entender de vez como funciona a Collection 7.
+
+Primeira coisa, como vimos aqui do lado, ela se encontra dentro de um pacote específico.
+
+Ela não é feita a importação automática pelo Java, então nós precisamos realmente fazer a
+
+importação desse pacote. Então, vamos lá. Vou colocar aqui, import, tá onde? Java.util.set.
+
+Aqui, já importei a interface. Agora, vamos importar a classe. Import java.util.hash7.
+
+Posso fazer o seguinte, em vez de fazer essas duas importações, eu posso fazer uma importação só.
+
+Vou deixar comentado, import java.util.asterisco. Então, todas as regras que nós estudamos lá no
+
+capítulo de Package, de pacotes, vale também aqui para a utilização da API, principalmente,
+
+para a utilização das classes, interfaces, etc, da API Java. Então, vou colocar aqui,
+
+importa todas as classes do pacote java.util. Só para lembrar vocês. Então, vamos construir a
+
+nossa classe. Public class, vou colocar aqui exemplo 7. E aí, nós vamos fazer o que? Colocar
+
+o nosso método main, o querido método main que está acompanhando a gente desde o início.
+
+String args, muito bem. E agora, eu vou fazer a declaração do set usando generics. Nós estudamos
+
+recentemente. Então, essa collection vai ser uma coleção, um conjunto de strings. Vou colocar
+
+aqui, conjunto igual a new hash set. E fizemos aqui, usamos generics, muito bem. Vai ser um
+
+conjunto de strings. Agora, nós vamos fazer o que? Adicionar alguns elementos. Vou colocar
+
+aqui, adicionando elementos. E vou colocar aqui, conjunto.ad e vou colocando aqui, java. Então,
+
+uma coleção de nomes de linguagens, né? Por exemplo, java. Agora, vamos colocar aqui,
+
+conjunto.ad, outra string, python. Lembra que nós estamos estudando aqui, usando generics, tá? Então,
+
+esse conjunto só pode haver strings. Todas as regras de generics que nós estudamos estão valendo.
+
+Continuando, vamos colocar mais um, conjunto.ad, c++. Aqui, adicionei três elementos. É como se
+
+tivesse criado um array, um super array, super moderno, com três elementos dentro. Ele sempre
+
+começa no zero, tá? Elemento zero, java. Elemento um, python. Elemento dois, c++. Vamos lá. Agora,
+
+vamos fazer a verificação. Vou colocar aqui, verificando se o conjunto contém um elemento.
+
+Então, vamos colocar na tela, system.out.println. Vamos fazer a impressão. Vou colocar aqui,
+
+contém java. Interrogação, contém java? Por exemplo, criei esse conjunto, certo? Eu quero saber
+
+se tem java nele. Aí, vou dar aqui, vou concatenar e vou chamar um método, lá dentro, de conjunto.
+
+Conjunto. Eu pergunto, contém java? Isso vai me retornar um verdadeiro ou falso, ou true ou
+
+falso, ou seja, verdadeiro. Porque contém uma string desse jeito, lá dentro. Contém java. Então,
+
+tem que ser impresso na tela. Agora, nós vamos fazer o seguinte, vamos adicionar mais elementos.
+
+Então, vou colocar aqui, adicionando mais elementos. Vou colocar aqui, ó, conjunto.add
+
+javascript. Vamos adicionar mais uma, conjunto.add ruby. Só linguagens maravilhosas, né? Super
+
+maravilhosas. Veja que eu criei aqui em cima, ó, eu não precisei definir um tamanho. E aqui,
+
+eu adicionei três elementos e depois adicionei mais elementos. Se fosse um array, ele seria um
+
+conjunto de um tamanho fixo. Aqui, eu não defino o tamanho. Ele vai crescendo conforme a sua
+
+necessidade. Ele vai se ajustando automaticamente. É maravilhoso. Você vai usar isso demais. Vamos
+
+colocar aqui, ó, imprime java.py, c++, javascript, ruby. Vamos colocar aqui uma system.out,
+
+comando para imprimir. Vou colocar aqui, conjunto completo. Vou fazer a concatenação de conjunto,
+
+tá vendo? Aqui, eu imprimi esses três e depois de eu adicionar mais elementos, eu imprimi de novo
+
+para ver. Deve sair isso aqui na tela. Se não sair, é porque tem alguma coisa errada no código.
+
+Continuando. Agora, eu vou fazer uma outra operação. Olha como é simples de você manipular
+
+uma collection. Vou colocar aqui, ó, removendo um elemento. Então, como que eu passo isso?
+
+Nome do objeto, conjunto, ponto. Remove. E eu quero remover o Python. E agora, eu vou imprimir.
+
+O que que vai ter que vir nessa impressão? Vai ter que vir java, c++, javascript e ruby.
+
+Vou colocar system.out.println, conjunto após remoção.
+
+E coloquei conjunto. Então, nessa linha, depois de eu remover aqui, ó, ele tem que vir sem o Python,
+
+correto? Aí, ele vai imprimir só esses aqui. É o que deve acontecer. Continuando. Agora,
+
+tentando adicionar um elemento duplicado. Vou colocar aqui um comentário. Comentários bem
+
+precisos. Acho que vale a pena, nesse momento que você está aprendendo, deixar esses comentários aí.
+
+Vamos colocar aqui um boolean. Vou colocar aqui, foi adicionado, né? Verdadeiro ou falso? Vou
+
+colocar aqui, conjunto.ad, tô tentando colocar o java. E vamos imprimir isso aqui. Vamos fazer
+
+impressão. Aí, vou colocar aqui, ó, java. Foi adicionado, novamente? Interrogação. Vamos concatenar
+
+que foi adicionado. Aqui, nós temos que receber um falso. Deixa eu puxar aqui um pouquinho. Então,
+
+o que eu quero dizer com isso? Quando você adiciona, chama o método ad, ele retorna um
+
+boolean. Ou seja, true or false. Verdadeiro ou falso. Veja que eu tô tentando colocar o java
+
+novamente, mas o java já foi colocado aqui. Então, ele não vai adicionar. E ele vai retornar,
+
+esse método vai retornar um boolean e vai para cá. E eu tô jogando esse boolean na tela para
+
+saber se é verdadeiro ou falso. E é claro que ele vai dar falso. Ele não adicionou. Ele não
+
+fez a operação de adicionar. Continuando. Agora, vamos limpar o conjunto. Ou seja,
+
+vou zerar a minha collection. Vou limpar ela. O que que eu faço? Conjunto.clear. Olha,
+
+simples assim. E aí, vamos fazer impressão para ver se isso realmente vai funcionar? Então,
+
+vamos colocar aqui, println e vamos colocar aqui o conjunto após limpar. Vamos concatenar com
+
+conjunto. Vamos ver? Já jogamos ele na tela aqui várias vezes, né? Ele foi sempre imprimindo o
+
+conjunto. Mas e agora? Né? Eu chamei clear. Então, ele tem que limpar totalmente. Significa
+
+que ele tem vazio. Dessa forma, vazio. Então, vamos fechar aqui o nosso metadomain e vamos
+
+fechar a nossa classe. E agora, nós vamos salvar e executar essa classe. Vamos copiar aqui o nome.
+
+Vamos usar ele, né? Vamos fazer um ctrl s e aí vamos colocar ele aqui, exemplos 7.java. Vamos
+
+fazer ele fazendo a pastinha curso, como nós estamos fazendo aí durante o curso. E agora,
+
+eu vou até o meu terminal. Deixa eu ajustar essa janela aqui, pra gente ver o código inteiro. E
+
+aqui vamos lá. Então, javac, o nome da classe, ponto java. Vamos fazer a compilação. Compilação
+
+feita. Agora, vou fazer a execução. Vamos executar essa classe. Tirar esse c daqui e vamos ver se
+
+tudo funcionou corretamente. E vamos lá. Vamos conferir, então, né? Temos o primeiro printline
+
+aqui. Ele pergunta, contém java? Então, deveria vir verdadeiro. True aqui. Conjunto.contains. Ele
+
+pergunta se é verdadeiro ou falso. Olha só. Verdadeiro, ele contém o java. Aí, essa segunda
+
+linha aqui. Essa segunda linha fez uma impressão um pouquinho maior, né? Por quê? Porque eu adicionei
+
+os dois elementos, javascript e ruby, e coloquei a impressão do conjunto inteiro. Só joguei, ó,
+
+ele inteiro. Joguei a minha collection inteira, meu objeto collection. Ele veio e realmente imprimiu
+
+o java, o C++, o javascript, o ruby e o python. Próximo aqui, vamos ver se funcionou. Esse item
+
+aqui, agora, fiz uma remoção, correto? Quem que eu removi? O python. Então, ele tem que vir diferente
+
+da listinha de cima. Todos menos o python, ó. Funcionou perfeitamente também. E agora, eu tentei
+
+adicionar um elemento, ó. E aí, guardei. Aqui, ele tenta adicionar e retorna se ele conseguiu ou não.
+
+Um booleano. E veja só, não conseguiu. Por quê? Porque ele tentou colocar o java de novo e o java
+
+já foi adicionado. E, por último, nós fizemos aí a limpeza do conjunto, né? A limpeza do meu objeto
+
+collection, dando um clear e fiz a impressão aqui. O que que aconteceu? Olha só, um conjunto limpinho,
+
+ou seja, limpei toda a minha collection. Então, é para isso que nós utilizamos e veja a facilidade
+
+de manipular, né, todos esses elementos utilizando a collection. Lembre-se sempre do principal fator,
+
+se você está usando set, você não trabalha com duplicadas.
+
+E um outro fator, para se observar, é referente à minha sequência, né? Lembra? Foi falado isso
+
+na introdução. Veja que eu coloquei o java, depois o Python, depois o C++, depois o JavaScript,
+
+depois o Ruby. Olha o que aconteceu aqui. Ele não garante a sequência, tá vendo? Tá diferente.
+
+Primeiro eu coloquei o Java, correto? Depois o Python, ele não veio, ó. O Python foi lá para
+
+último. Aí veio o C++ para cá, depois o JavaScript e o Ruby, tá vendo? Ele fez uma adição sem
+
+alterar nenhuma ordem. É uma característica de set interface.

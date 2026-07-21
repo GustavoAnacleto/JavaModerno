@@ -1,0 +1,71 @@
+Outra informação importante a saber é que MAP não é ordenado por padrão.
+
+Isso significa que os elementos não seguem uma ordem específica.
+
+Quando você insere pares chaves valor em um map comum como um HashMap, eles não são armazenados em
+
+nenhuma ordem em particular e a ordem pode mudar quando mais elementos são adicionados ou removidos.
+
+No entanto, existem implementações específicas de MAP que são ordenadas.
+
+É o Linked HashMap que mantém os elementos na ordem em que foram inseridos.
+
+E o Tree Map, que ordena os elementos com base no valor das chaves de acordo com a ordem natural das
+
+chaves.
+
+Portanto, se a ordem dos elementos é importante para o seu caso de uso, você pode escolher uma dessas
+
+implementações que mantém os elementos ordenados.
+
+Estas duas últimas classes, Linked HashMap e Tree Map não são cobertas neste curso básico de Java,
+
+mas com as informações que serão passadas sobre HashMap e Map, você poderá facilmente implementar uma
+
+lista ordenada.
+
+Caso você queira, basta utilizar essas outras classes e criar conforme.
+
+Nós vamos fazer de forma bem semelhante com HashMap.
+
+Aí você pode pensar por que algumas são ordenadas ou não?
+
+A razão pela qual nem todas as coleções em Java são ordenadas está relacionada ao equilíbrio entre desempenho
+
+e funcionalidade.
+
+Cada tipo de coleção é projetado com um objetivo específico em mente e a ordenação é uma das muitas
+
+características que uma coleção pode ter.
+
+Então isso está muito ligado também à questão do desempenho, porque a estrutura de dados não ordenadas
+
+geralmente oferecem operações mais rápidas, como adicionar, remover e verificar se um elemento está
+
+presente.
+
+Isso ocorre porque não há necessidade de manter os elementos em uma ordem específica, o que economiza
+
+tempo de computação.
+
+Além disso, também tem a questão do uso de memória.
+
+Manter uma coleção ordenada pode exigir mais memória.
+
+Pode ser necessário armazenar informações adicionais sobre a ordem dos elementos.
+
+Ou seja, o processamento pesa mais sobre listas ordenadas.
+
+Então, se você vai fazer uma lista ordenada, tenha isso em mente.
+
+Aí você pode fazer um teste e falar Professor, mas eu não vi diferença nenhuma aqui na performance.
+
+É porque você está com poucas cargas de trabalho aí.
+
+Se o seu sistema Java estiver processando milhões de informações, aí sim você vai ver a diferença de
+
+performance.
+
+De outra forma, você não vai conseguir verificar isso aí.
+
+Tá bom.

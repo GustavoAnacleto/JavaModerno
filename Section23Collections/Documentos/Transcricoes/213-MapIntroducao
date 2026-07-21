@@ -1,0 +1,75 @@
+Map interface.
+
+A primeira coisa que nós vemos é que a interface Map.
+
+Ela está no mesmo pacote que set e list, ou seja, em Java.
+
+Útil.
+
+Isso significa que nós precisamos importar para utilizar importar a interface map, a classe que vamos
+
+utilizar para fazer a criação do objeto, etc.
+
+Além das interfaces de Collection, o framework de coleções também inclui a interface Map.
+
+Embora Map não seja verdadeiramente uma interface de coleção, ela é totalmente integrada ao framework
+
+de coleções.
+
+A afirmação de que MAP não é uma verdadeira interface de coleções no framework de coleções Java se deve
+
+ao fato de que ela possui características distintas das outras interfaces de coleções, como set list
+
+que vimos anteriormente.
+
+Enquanto estas são interfaces que estendem a interface Collection, a interface Map não faz isso.
+
+Isso significa que Map não herda os métodos da interface Collections, como acontece com Set e List.
+
+O Map em Java é uma interface que armazena pares de chave valor, onde cada chave está associada a um
+
+único valor.
+
+Ele permite armazenar e recuperar dados de forma eficiente com base em chaves exclusivas, evitando
+
+duplicatas.
+
+Eu quero enfatizar que a interface Map não permite chaves duplicadas.
+
+Cada chave deve ser única.
+
+Se você adicionar uma chave que já existe, o valor associado a esta chave é substituído pelo novo valor.
+
+O Map oferece um conjunto de métodos específicos para manipular chaves pares de chave valor como put
+
+get remove, que são encontrados na interface Collection.
+
+Portanto, embora MAP seja integrado ao framework de coleções e possa ser considerado uma coleção no
+
+sentido amplo de agrupar objetos.
+
+Ela não é uma coleção no sentido estrito definido pelo framework de coleções Java.
+
+Para entender melhor isso, imagine que a interface map é como um dicionário onde você tem a palavra
+
+que seria a chave e o significado dessa palavra, que seria o valor.
+
+No Java, outras coleções como List set são como listas de compras, onde você tem apenas uma lista
+
+de itens.
+
+Um outro exemplo a gente pode imaginar o seguinte em uma list ou set você tem itens como maçã, bananas,
+
+abacate.
+
+Em um map você tem associações.
+
+Por exemplo, eu poderia ter maçã igual a vermelha, banana igual a amarela, abacate igual a verde.
+
+HashMap é uma implementação da interface Map.
+
+É uma classe que armazena pares chave valor.
+
+Assim como o hash set, o HashMap oferece operações de adição, remoção e busca de elementos com alta
+
+performance.

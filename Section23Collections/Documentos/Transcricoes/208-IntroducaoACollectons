@@ -1,0 +1,47 @@
+Java Collections Framework – Coleções Java Em Java, uma collection é como um container
+
+que agrupa vários elementos em uma unidade única.
+
+As collections são usadas para armazenar, recuperar, manipular e comunicar dados de grupo.
+
+O Java Collections Framework fornece muitas interfaces e classes para manipular os elementos.
+
+Elas têm uma similaridade com Arrays, porque Arrays também são objetos, collections também são objetos.
+
+Ambos, Java Collections e Arrays, são usados para armazenar dados.
+
+A principal diferença é que, enquanto um Array é de tamanho fixo, as collections são dinâmicas.
+
+Isso significa que você pode adicionar ou remover elementos de uma collection após
+
+a sua criação, o que não é possível com um Array.
+
+Além disso, as collections em Java vêm com métodos poderosos que facilitam a manipulação
+
+de dados, como ordenação, pesquisa e muito mais.
+
+Embora os Arrays não tenham tantos métodos embutidos, eles são, por outro lado, mais
+
+eficientes em termos de desempenho para armazenar e acessar dados.
+
+Mas dentro do seu dia a dia profissional, você tende a usar mais Java Collections.
+
+Array de classes de coleções A interface collection é uma das interfaces
+
+raiz de Java Collections Framework.
+
+Ela define os métodos básicos que todas as coleções terão, como add, remove, clear,
+
+size, isEmpty, contains, etc.
+
+Existem várias subinterfaces de collection, incluindo set, list, map, entre outras.
+
+Cada uma dessas interfaces tem suas próprias características e tipos de implementação.
+
+E no Java temos as implementações dessas interfaces realizadas por classes amplamente
+
+utilizadas, classes da API Java, como HashSet, ArrayList e HashMap.
+
+São classes como essas que finalmente usaremos para criar coleções de objetos.
+
+Veremos como cada uma delas funciona neste capítulo.
