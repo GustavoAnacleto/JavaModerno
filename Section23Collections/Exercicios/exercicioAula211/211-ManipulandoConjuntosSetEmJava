@@ -1,0 +1,149 @@
+Exercício: Manipulando Conjuntos (Set) em Java
+
+Objetivo
+O objetivo deste exercício é praticar o uso da interface Set para armazenar elementos únicos em Java.
+
+Instruções
+Crie uma classe chamada SetExercise.
+
+No método main, declare e inicialize um conjunto (set) de números inteiros.
+
+Adicione alguns números inteiros ao conjunto.
+
+Verifique se um número específico está presente no conjunto.
+
+Remova um número do conjunto.
+
+Imprima todos os números restantes no conjunto.
+
+Passos para fazê-lo
+Crie a classe SetExercise.
+
+Declare uma variável do tipo Set<Integer> e inicialize-a com um conjunto vazio.
+
+Adicione alguns números inteiros usando o método add.
+
+Use o método contains para verificar se um número específico está presente no conjunto.
+
+Remova um número usando o método remove.
+
+Utilize a representação padrão do conjunto na impressão.
+
+
+_________________________________________________________________________________________________________________
+
+
+EXERCICIO MELHORADO PELA IA AUMENTANDO O NÌVEL DE DIFICULDADE:
+
+Exercício aprimorado — Manipulando números únicos com Set
+
+Crie a classe:
+
+SetExercise
+Objetivo
+
+Praticar:
+
+imports;
+criação da classe e do método main;
+declaração de Set<Integer>;
+instanciação com HashSet;
+métodos add(), contains(), remove(), size(), clear() e isEmpty();
+retorno boolean dos métodos;
+repetição com for-each;
+regra de não permitir elementos duplicados.
+
+Instruções obrigatórias
+
+Faça os imports necessários para utilizar Set e HashSet.
+Crie a classe SetExercise.
+Crie o método main.
+Declare uma variável chamada:
+numeros
+
+Ela deve ser do tipo Set<Integer> e utilizar HashSet como implementação.
+
+Adicione os seguintes números:
+10, 20, 30, 40, 50
+
+Escreva uma chamada de add() para cada número, para treinar a sintaxe.
+
+Imprima o conjunto completo e sua quantidade de elementos.
+Use contains() para verificar:
+se o número 30 existe;
+se o número 70 existe.
+
+Armazene os resultados em duas variáveis boolean e depois imprima mensagens explicativas.
+
+Remova o número 20.
+
+O retorno de remove() deve ser guardado em uma variável chamada:
+
+boolean foiRemovido;
+
+Depois, imprima se a remoção aconteceu.
+
+Tente remover o número 90, que não existe no conjunto.
+
+Guarde novamente o resultado em uma variável boolean e mostre-o na tela.
+
+Tente adicionar novamente o número 30.
+
+Guarde o retorno de add() em:
+
+boolean foiAdicionado;
+
+Explique na impressão por que o resultado foi true ou false.
+
+Imprima novamente:
+o conjunto completo;
+a quantidade de elementos.
+Percorra o conjunto com for-each.
+
+Para cada número, imprima:
+
+Número encontrado: 10
+
+Além disso, use if para informar se o número é par ou ímpar.
+
+Use clear() para remover todos os elementos.
+Imprima o conjunto depois da limpeza.
+Use isEmpty() e imprima o resultado para confirmar que o conjunto está vazio.
+Saída esperada conceitualmente
+
+A ordem exata pode variar, porque você utilizará HashSet.
+
+O programa deve demonstrar que:
+
+números únicos foram adicionados;
+30 existe;
+70 não existe;
+20 foi removido;
+90 não pôde ser removido;
+a segunda inclusão de 30 retornou false;
+todos os números foram percorridos;
+o conjunto ficou vazio no final.
+Desafio complementar
+
+Depois de terminar o exercício principal, crie outro conjunto chamado:
+
+numerosEmOrdemDeInsercao
+
+Use LinkedHashSet e adicione:
+
+50, 10, 40, 20, 30
+
+Imprima o conjunto e observe que ele mantém a ordem em que os números foram adicionados.
+
+Depois crie:
+
+numerosOrdenados
+
+Use TreeSet com os mesmos números e observe a ordem crescente.
+
+Não use stream, expressão lambda ou métodos avançados. A intenção é escrever a sintaxe fundamental manualmente.
+
+Estrutura sugerida:
+
+
+
