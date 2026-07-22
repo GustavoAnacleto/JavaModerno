@@ -62,6 +62,13 @@ ________________________________________________________________________________
 
 R: Collection e Map fazem parte do Java Collections Framework, mas possuem funções diferentes. Collection representa grupos de elementos individuais, como List, Set e Queue. Map representa pares de chave e valor. Por isso, HashMap implementa Map e não Collection: seus dados não são armazenados como elementos isolados, mas como associações entre uma chave e um valor. Existem outras estruturas, porém, neste momento, o mais importante é entender bem ArrayList, HashSet e HashMap.
 
+
+?Map tem ordem tipo (Chave, valor ) ou posso colocar (valor , chave)?
+
+R: Em Map, a estrutura segue sempre esta ordem:
+Map<TipoDaChave, TipoDoValor> 
+
+
 ******************************Anotações sobre as aulas****************************************
 
 Aula207: breve introdução.
@@ -71,6 +78,8 @@ Aula208: aula apresentou conceitos e explicou que cada classe tem suas próprias
 Ao pesquisar sobre o assunto fiquei sabendo que o pai de HashMap é a Map.
 
 Gerar resumo 01 -> 207 e 208
+
+______________________________________________________________________________________________
 
 Aula209: introdução sobre Set infomando que para usa-lo preciso importar import java.util.Set ou * importa todas.
 
@@ -96,6 +105,39 @@ Aula210: gerando o primeiro fonte para praticar conceito ExemploSet.java
 * mas não deve ser usado como critério de ordenação.
 
 código complementar gerado por IA: ExemploSetComplementar.java
+
+Gerar resumo 02 -> 209 e 210
+
+______________________________________________________________________________________________
+
+Aula212: Iniciando List, criado o arquivo ExemploList.java onde exemplificou as principais possibilidades de uso sobre List. (contains,asList,addAll,remove,get e clear).
+
+após isso pesquisei e gerei outro arquivo o ExemploListComplementar.java aonde abordei conceito como (size, add passando o índice onde deseja inserir, editando com set passando o índice que deseja alterar, indexOf(elementoProcurado) busca o elemento informado e retorna o 
+índice da primeira vez em que esse elemento aparece na lista, lastIndexOf(elemento) retorna o índice da última ocorrência, remove(indice) remove o elemento de uma determinada posição, Collections.sort(lista) ordena os textos em ordem alfabética crescente, Collections.reverse(linguagens) ordem decrescente, isEmpty() verifica se a lista está vazia.) indo bem além por motivo de querer realmente evoluir em java.
+
+Aula213: Introdução a Collection Map pai do hashMap, consta no mesmo pacote java.util, chaves são unicas valores podem ser duplicados, Map oferece métodos especificos como put, get, e remove, Map é como um dicionario 
+
+idades.put("Gustavo", 38);
+idades.put("Gustavo", 40);
+não existirão dois registros de Gustavo. O segundo put() substitui o valor anterior.
+
+idades.put("Gustavo", 38);
+idades.put("Carlos", 38);
+idades.put("Ana", 38);
+Já os valores podem se repetir.
+
+Aula214: importante saber que Map nao é ordenado por padrão, no entando exite manobras para ordenar e veremos isso nas proximas aulas.
+
+LinkedHashMap
+TreeMap
+
+Aula215: geramos ExemploMap.java. Onde no ExemploMap, aprendi a criar e manipular um Map com pares de chave e valor. Pratiquei o uso de put() para adicionar ou atualizar dados, containsKey() para verificar a existência de uma chave, get() para buscar um valor, remove() para excluir um elemento e clear() para limpar o mapa. Também entendi que as chaves não podem se repetir, enquanto os valores podem.
+
+Mas ao perceber que existe muito mais decidi criar o ExemploMapComplementar.java:
+No ExemploMapComplementar, decidi aprofundar o estudo de Map por conta própria. Explorei métodos como containsValue(), getOrDefault(), putIfAbsent(), replace(), keySet(), values() e entrySet(). Também comparei HashMap, LinkedHashMap e TreeMap, entendendo as diferenças entre ausência de ordem, ordem de inserção e ordenação pelas chaves.
+Gerar resumo 03 -> 213, 214 e 215.
+
+
 
 
 
