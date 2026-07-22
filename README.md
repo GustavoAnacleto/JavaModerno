@@ -273,6 +273,41 @@ Principal aprendizado da seção: Generics permite criar classes, interfaces e m
 
 ---
 
+### Seção 23 – Collections
+
+- Introdução ao Java Collections Framework.
+- Diferença entre arrays e Collections.
+- Entendimento de que Collections trabalham com objetos e usam Generics.
+- Uso da interface como contrato e da classe concreta como implementação.
+- Diferença entre `Collection`, `Collections` e `Map`.
+- Uso de `Set` para elementos únicos.
+- Prática com `HashSet`, `LinkedHashSet` e `TreeSet`.
+- Uso de `add()`, `contains()`, `remove()`, `size()`, `clear()` e `isEmpty()`.
+- Entendimento de que `HashSet` não garante ordem.
+- Uso de `LinkedHashSet` para ordem de inserção.
+- Uso de `TreeSet` para ordenação crescente e decrescente.
+- Uso de `List` para elementos ordenados, com índices e duplicatas.
+- Prática com `ArrayList`.
+- Uso de `add()`, `addAll()`, `get()`, `set()`, `indexOf()`, `lastIndexOf()` e `remove()`.
+- Percorrimento com `for-each` e `for` tradicional.
+- Ordenação com `Collections.sort()` e `Collections.reverse()`.
+- Uso de `Map` para trabalhar com pares de chave e valor.
+- Prática com `HashMap`, `LinkedHashMap` e `TreeMap`.
+- Entendimento de que chaves são únicas e valores podem se repetir.
+- Uso de `put()`, `get()`, `containsKey()`, `containsValue()`, `remove()` e `clear()`.
+- Uso de `getOrDefault()`, `putIfAbsent()` e `replace()`.
+- Percorrimento com `keySet()`, `values()` e `entrySet()`.
+- Relação entre `Map` e estruturas JSON.
+- Criação dos arquivos complementares `ExemploSetComplementar`, `ExemploListComplementar` e `ExemploMapComplementar`.
+- Criação do exercício `SetExercise`.
+- Organização dos estudos com transcrições, anotações, resumos e commits.
+- Planejamento do projeto independente `central-chamados-java-collections`.
+
+Principal aprendizado da seção: `List`, `Set` e `Map` resolvem problemas diferentes. `List` é adequada quando a ordem, os índices ou a repetição importam. `Set` deve ser usada para elementos únicos. `Map` é indicada quando precisamos relacionar uma chave a um valor. A seção também reforçou a importância de escolher a estrutura conforme a necessidade real do programa, e não apenas pela sintaxe.
+
+---
+
+
 ---
 
 
