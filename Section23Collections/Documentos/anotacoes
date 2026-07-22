@@ -112,8 +112,12 @@ ________________________________________________________________________________
 
 Aula212: Iniciando List, criado o arquivo ExemploList.java onde exemplificou as principais possibilidades de uso sobre List. (contains,asList,addAll,remove,get e clear).
 
-após isso pesquisei e gerei outro arquivo o ExemploListComplementar.java aonde abordei conceito como (size, add passando o índice onde deseja inserir, editando com set passando o índice que deseja alterar, indexOf(elementoProcurado) busca o elemento informado e retorna o 
+após isso pesquisei e gerei outro arquivo o código complementar gerado por IA: ExemploListComplementar.java aonde abordei conceito como (size, add passando o índice onde deseja inserir, editando com set passando o índice que deseja alterar, indexOf(elementoProcurado) busca o elemento informado e retorna o 
 índice da primeira vez em que esse elemento aparece na lista, lastIndexOf(elemento) retorna o índice da última ocorrência, remove(indice) remove o elemento de uma determinada posição, Collections.sort(lista) ordena os textos em ordem alfabética crescente, Collections.reverse(linguagens) ordem decrescente, isEmpty() verifica se a lista está vazia.) indo bem além por motivo de querer realmente evoluir em java.
+
+Gerar resumo 03 -> 213.
+
+______________________________________________________________________________________________
 
 Aula213: Introdução a Collection Map pai do hashMap, consta no mesmo pacote java.util, chaves são unicas valores podem ser duplicados, Map oferece métodos especificos como put, get, e remove, Map é como um dicionario 
 
@@ -133,13 +137,10 @@ TreeMap
 
 Aula215: geramos ExemploMap.java. Onde no ExemploMap, aprendi a criar e manipular um Map com pares de chave e valor. Pratiquei o uso de put() para adicionar ou atualizar dados, containsKey() para verificar a existência de uma chave, get() para buscar um valor, remove() para excluir um elemento e clear() para limpar o mapa. Também entendi que as chaves não podem se repetir, enquanto os valores podem.
 
-Mas ao perceber que existe muito mais decidi criar o ExemploMapComplementar.java:
+Mas ao perceber que existe muito mais, me deparei com a necessidade e decidi criar o 
+código complementar gerado por IA:  ExemploMapComplementar.java:
 No ExemploMapComplementar, decidi aprofundar o estudo de Map por conta própria. Explorei métodos como containsValue(), getOrDefault(), putIfAbsent(), replace(), keySet(), values() e entrySet(). Também comparei HashMap, LinkedHashMap e TreeMap, entendendo as diferenças entre ausência de ordem, ordem de inserção e ordenação pelas chaves.
-Gerar resumo 03 -> 213, 214 e 215.
-
-
-
-
+Gerar resumo 04 -> 214 e 215.
 
 **************************************EXERCICIOS**********************************************
 
